@@ -1,0 +1,3 @@
+[submodule "libgene"]
+	path = libgene
+	url = https://github.com/Frangou-Lab/libgene.git

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GUFileFormatBoxController">
+            <connections>
+                <outlet property="_columnsInputOrderTextField" destination="Owt-B2-NY8" id="uD7-b1-Uqd"/>
+                <outlet property="_columnsOutputOrderTextField" destination="cWX-mD-4Hh" id="ISc-hE-mH1"/>
+                <outlet property="_defaultQualityCheckbox" destination="Psz-41-19a" id="ff9-ag-JFd"/>
+                <outlet property="_duplicateFastqIdsCheckbox" destination="YMM-aY-3cq" id="ic9-qR-lHQ"/>
+                <outlet property="_ignoreColumnDefsCheckbox" destination="vkP-Es-7Ye" id="5NJ-qz-UwO"/>
+                <outlet property="_inputFormatSelector" destination="mqD-rd-dLJ" id="Oll-kI-JkC"/>
+                <outlet property="_omitQualityCheckbox" destination="rzb-9a-Xr4" id="7cQ-is-5Te"/>
+                <outlet property="_outputFormatMenu" destination="TQ6-G0-j0d" id="oMG-L3-tYr"/>
+                <outlet property="_outputFormatSelector" destination="uhj-EX-fOG" id="CvT-dm-zog"/>
+                <outlet property="_qualityTextfield" destination="U91-y3-NMf" id="CFe-nC-Wlf"/>
+                <outlet property="_reorderInputColumnsCheckbox" destination="nYN-81-Ef4" id="XEi-8S-eiF"/>
+                <outlet property="_reorderOutputColumnsCheckbox" destination="XsM-tk-R7k" id="Nkp-EA-thg"/>
+                <outlet property="_splitFastaCheckbox" destination="DQs-Dy-Lfm" id="7fL-ze-Fcc"/>
+                <outlet property="view" destination="c22-O7-iKe" id="4DL-gJ-trc"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" userLabel="File Format Box View">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box borderType="line" title="File format" translatesAutoresizingMaskIntoConstraints="NO" id="jKL-Fo-M4F">
+                    <rect key="frame" x="-3" y="-4" width="429" height="115"/>
+                    <view key="contentView" id="gTh-9G-MDf">
+                        <rect key="frame" x="1" y="1" width="427" height="99"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mqD-rd-dLJ">
+                                <rect key="frame" x="51" y="60" width="159" height="26"/>
+                                <popUpButtonCell key="cell" type="push" title="Use extension" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="qhZ-Bi-scR" id="fb5-TV-Iap">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="vZG-42-vaL">
+                                        <items>
+                                            <menuItem title="Use extension" state="on" id="qhZ-Bi-scR"/>
+                                            <menuItem title="fastq" id="f1k-2q-mjt"/>
+                                            <menuItem title="fastq - Illumina 1.8+" id="Ra1-tX-xxd"/>
+                                            <menuItem title="fastq - Illumina 1.5" id="NdB-uw-dGK"/>
+                                            <menuItem title="fastq - Illumina 1.3" id="GZg-Yx-xYn"/>
+                                            <menuItem title="fastq - Solexa" id="aaw-PI-l6W"/>
+                                            <menuItem title="fastq - Sanger" id="J1N-Ip-HUq"/>
+                                            <menuItem title="gb" id="XHM-Pf-hm4" userLabel="gb"/>
+                                            <menuItem title="csv" id="nuC-HX-E9O"/>
+                                            <menuItem title="tsv" id="JSq-kk-H0D"/>
+                                            <menuItem title="fasta" id="ti9-1V-uLc"/>
+                                            <menuItem title="bam" id="T1J-ah-NQQ" userLabel="bam"/>
+                                            <menuItem title="sam" id="uzy-W7-Zw5"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="_inputFormatSelectorClicked:" target="-2" id="rwD-DF-jy3"/>
+                                </connections>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkc-U2-ogh">
+                                <rect key="frame" x="13" y="66" width="39" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Input:" id="2PK-nI-pPe">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vsv-T2-yiB">
+                                <rect key="frame" x="217" y="66" width="50" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Output:" id="ue6-MQ-NrO">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField toolTip="Quality symbol ('I' is the default)" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U91-y3-NMf">
+                                <rect key="frame" x="361" y="34" width="29" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="S51-xa-xwE"/>
+                                    <constraint firstAttribute="height" constant="22" id="qtC-h4-0g0"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="I" placeholderString="" drawsBackground="YES" usesSingleLineMode="YES" id="Whm-BZ-Gpu">
+                                    <font key="font" size="13" name="Menlo-Regular"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="_defaultQualityTextEntered:" target="-2" id="cUZ-oa-WAr"/>
+                                </connections>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uhj-EX-fOG">
+                                <rect key="frame" x="266" y="60" width="149" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="qKk-Sz-XaH"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" title="fastq - Illumina 1.8+" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="e8x-dU-GRh" id="PD8-NR-9Bm">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="TQ6-G0-j0d">
+                                        <items>
+                                            <menuItem title="fastq - Illumina 1.8+" state="on" id="e8x-dU-GRh" userLabel="fastq (Illumina 1.8+)"/>
+                                            <menuItem title="fastq - Illumina 1.5" id="RFS-zT-BKB" userLabel="fastq (Illumina 1.3+)"/>
+                                            <menuItem title="fastq - Illumina 1.3" id="ZzS-K0-mEt" userLabel="fastq (Illumina 1.3+)"/>
+                                            <menuItem title="fastq - Solexa" id="4VD-OO-AVU" userLabel="fastq (Solexa)"/>
+                                            <menuItem title="fastq - Sanger" id="6VM-Lt-J8i" userLabel="fastq (Sanger)"/>
+                                            <menuItem title="csv" id="SAi-hf-Y8A">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="tsv" id="ALH-tU-mqH"/>
+                                            <menuItem title="fasta" id="txY-fT-rUn" userLabel="fasta"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="_outputFormatSelectorClicked:" target="-2" id="NQ9-b0-KPu"/>
+                                </connections>
+                            </popUpButton>
+                            <button toolTip="Split data by 80 characters in a row" translatesAutoresizingMaskIntoConstraints="NO" id="DQs-Dy-Lfm">
+                                <rect key="frame" x="218" y="36" width="90" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="25s-8o-Lt7"/>
+                                    <constraint firstAttribute="height" constant="14" id="gdp-h7-DVp"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Split fasta" bezelStyle="regularSquare" imagePosition="left" inset="2" id="cF2-yX-RKM">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button toolTip="Set FASTQ quality symbol (! is default)" translatesAutoresizingMaskIntoConstraints="NO" id="Psz-41-19a">
+                                <rect key="frame" x="218" y="36" width="128" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="5ZG-qe-pl7"/>
+                                    <constraint firstAttribute="height" constant="14" id="DuK-B1-k8R"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Override quality:" bezelStyle="regularSquare" imagePosition="left" inset="2" id="qxs-4e-9HR">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="_setDefaultQualityChecked:" target="-2" id="BTX-Ab-c5d"/>
+                                </connections>
+                            </button>
+                            <button identifier="Omit Quality column - Convert" translatesAutoresizingMaskIntoConstraints="NO" id="rzb-9a-Xr4">
+                                <rect key="frame" x="217" y="16" width="105" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="QJp-eM-ACc"/>
+                                    <constraint firstAttribute="height" constant="14" id="itK-fd-o7s"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Omit quality" bezelStyle="regularSquare" imagePosition="left" inset="2" id="AHx-H3-CH3">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button toolTip="Reorder columns in output " translatesAutoresizingMaskIntoConstraints="NO" id="XsM-tk-R7k">
+                                <rect key="frame" x="218" y="36" width="117" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="CFp-Ca-uM6"/>
+                                    <constraint firstAttribute="height" constant="14" id="p5Z-m7-do6"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Columns order" bezelStyle="regularSquare" imagePosition="left" inset="2" id="2yx-e4-Rb2">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="_reorderOutputColumnsCheckboxChecked:" target="-2" id="58A-xj-SQo"/>
+                                </connections>
+                            </button>
+                            <button toolTip="Reorder columns in output " translatesAutoresizingMaskIntoConstraints="NO" id="nYN-81-Ef4">
+                                <rect key="frame" x="13" y="16" width="117" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="95W-wD-7a8"/>
+                                    <constraint firstAttribute="height" constant="14" id="wac-ha-2E0"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Columns order" bezelStyle="regularSquare" imagePosition="left" inset="2" id="x6L-r9-du2">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="_reorderInputColumnsCheckboxChecked:" target="-2" id="5Qo-Ny-JcK"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-mD-4Hh">
+                                <rect key="frame" x="356" y="34" width="49" height="22"/>
+                                <string key="toolTip">csv/tsv file column order
+
+Example:
+    'SQN.D' – Sequence -1st, Quality - 2nd, Name - 3rd, Description - 5th</string>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="qFf-oF-nEt"/>
+                                    <constraint firstAttribute="height" constant="22" id="t8d-Ls-Ijh"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" title="NDSQ." placeholderString="" drawsBackground="YES" usesSingleLineMode="YES" id="gPV-UD-QbQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </textFieldCell>
+                            </textField>
+                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Wne-Dy-gO8">
+                                <rect key="frame" x="211" y="14" width="5" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="3xM-vo-oFL"/>
+                                </constraints>
+                            </box>
+                            <button toolTip="Always assume NSDQ column order" translatesAutoresizingMaskIntoConstraints="NO" id="vkP-Es-7Ye">
+                                <rect key="frame" x="13" y="36" width="176" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="X1P-Go-boa"/>
+                                    <constraint firstAttribute="width" constant="172" id="X20-Hh-Whq"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Ignore column definitions" bezelStyle="regularSquare" imagePosition="left" inset="2" id="SjH-Cl-ATU">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button toolTip="Duplicate ID and Description after '+' symbol" translatesAutoresizingMaskIntoConstraints="NO" id="YMM-aY-3cq" userLabel="Duplicate Fastq Ids">
+                                <rect key="frame" x="217" y="16" width="149" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="TId-Zk-vQD"/>
+                                    <constraint firstAttribute="width" constant="145" id="q7I-un-rqI"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Duplicate fastq IDs" bezelStyle="regularSquare" imagePosition="left" inset="2" id="FNA-vU-Q5g">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Owt-B2-NY8">
+                                <rect key="frame" x="132" y="14" width="49" height="22"/>
+                                <string key="toolTip">csv/tsv file column order
+
+Example:
+    'SQN.D' – Sequence -1st, Quality - 2nd, Name - 3rd, Description - 5th</string>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="ZNN-sb-hDd"/>
+                                    <constraint firstAttribute="height" constant="22" id="cRu-EB-ETd"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" title="NDSQ." placeholderString="" drawsBackground="YES" usesSingleLineMode="YES" id="fI3-0q-zYS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Psz-41-19a" firstAttribute="leading" secondItem="Wne-Dy-gO8" secondAttribute="trailing" constant="6" id="5CO-VU-efz"/>
+                            <constraint firstItem="mqD-rd-dLJ" firstAttribute="top" secondItem="gTh-9G-MDf" secondAttribute="top" constant="15" id="8zC-ZV-5Ce"/>
+                            <constraint firstItem="uhj-EX-fOG" firstAttribute="leading" secondItem="Vsv-T2-yiB" secondAttribute="trailing" constant="3" id="9OI-W8-oGN"/>
+                            <constraint firstItem="Psz-41-19a" firstAttribute="baseline" secondItem="DQs-Dy-Lfm" secondAttribute="baseline" id="CDx-a2-GEG"/>
+                            <constraint firstItem="cWX-mD-4Hh" firstAttribute="leading" secondItem="XsM-tk-R7k" secondAttribute="trailing" constant="23" id="Lmn-Np-az7"/>
+                            <constraint firstItem="Wne-Dy-gO8" firstAttribute="centerX" secondItem="gTh-9G-MDf" secondAttribute="centerX" id="NW3-dj-cph"/>
+                            <constraint firstItem="vkP-Es-7Ye" firstAttribute="top" secondItem="mqD-rd-dLJ" secondAttribute="bottom" constant="11" id="Q5Q-Eg-q7z"/>
+                            <constraint firstItem="Psz-41-19a" firstAttribute="baseline" secondItem="XsM-tk-R7k" secondAttribute="baseline" id="QdH-kk-fnF"/>
+                            <constraint firstAttribute="trailing" secondItem="uhj-EX-fOG" secondAttribute="trailing" constant="15" id="Qs4-aa-5Gk"/>
+                            <constraint firstItem="XsM-tk-R7k" firstAttribute="top" secondItem="uhj-EX-fOG" secondAttribute="bottom" constant="11" id="TLV-jb-ZlA"/>
+                            <constraint firstItem="rzb-9a-Xr4" firstAttribute="top" secondItem="XsM-tk-R7k" secondAttribute="bottom" constant="6" id="ajl-Qm-aaF"/>
+                            <constraint firstItem="YMM-aY-3cq" firstAttribute="leading" secondItem="Wne-Dy-gO8" secondAttribute="trailing" constant="5" id="cCC-Yl-lHn"/>
+                            <constraint firstItem="uhj-EX-fOG" firstAttribute="top" secondItem="gTh-9G-MDf" secondAttribute="top" constant="15" id="cUA-bu-OOP"/>
+                            <constraint firstItem="Owt-B2-NY8" firstAttribute="top" secondItem="vkP-Es-7Ye" secondAttribute="bottom" constant="2" id="ccv-cc-5Un"/>
+                            <constraint firstItem="DQs-Dy-Lfm" firstAttribute="top" secondItem="uhj-EX-fOG" secondAttribute="bottom" constant="11" id="dfV-BX-rvk"/>
+                            <constraint firstItem="U91-y3-NMf" firstAttribute="top" secondItem="uhj-EX-fOG" secondAttribute="bottom" constant="7" id="dgf-kx-OK5"/>
+                            <constraint firstItem="Owt-B2-NY8" firstAttribute="leading" secondItem="nYN-81-Ef4" secondAttribute="trailing" constant="4" id="dwm-Ps-HVw"/>
+                            <constraint firstItem="nYN-81-Ef4" firstAttribute="top" secondItem="vkP-Es-7Ye" secondAttribute="bottom" constant="6" id="ewX-cL-gTu"/>
+                            <constraint firstItem="XsM-tk-R7k" firstAttribute="leading" secondItem="Wne-Dy-gO8" secondAttribute="trailing" constant="6" id="f7Y-N5-NBA"/>
+                            <constraint firstItem="Psz-41-19a" firstAttribute="top" secondItem="uhj-EX-fOG" secondAttribute="bottom" constant="11" id="hBF-xv-cRY"/>
+                            <constraint firstItem="cWX-mD-4Hh" firstAttribute="top" secondItem="uhj-EX-fOG" secondAttribute="bottom" constant="7" id="hjP-97-HcL"/>
+                            <constraint firstItem="Wne-Dy-gO8" firstAttribute="centerY" secondItem="gTh-9G-MDf" secondAttribute="centerY" id="jwy-Ri-X4v"/>
+                            <constraint firstItem="vkc-U2-ogh" firstAttribute="leading" secondItem="gTh-9G-MDf" secondAttribute="leading" constant="15" id="klz-4a-FRl"/>
+                            <constraint firstItem="YMM-aY-3cq" firstAttribute="top" secondItem="cWX-mD-4Hh" secondAttribute="bottom" constant="2" id="mC5-YF-Jht"/>
+                            <constraint firstItem="Vsv-T2-yiB" firstAttribute="leading" secondItem="mqD-rd-dLJ" secondAttribute="trailing" constant="12" id="mZR-U6-xGe"/>
+                            <constraint firstItem="Vsv-T2-yiB" firstAttribute="top" secondItem="gTh-9G-MDf" secondAttribute="top" constant="16" id="q8r-EV-EdT"/>
+                            <constraint firstItem="rzb-9a-Xr4" firstAttribute="leading" secondItem="Wne-Dy-gO8" secondAttribute="trailing" constant="5" id="r0Z-Xo-2Pv"/>
+                            <constraint firstItem="U91-y3-NMf" firstAttribute="leading" secondItem="XsM-tk-R7k" secondAttribute="trailing" constant="28" id="s24-E7-1eX"/>
+                            <constraint firstItem="DQs-Dy-Lfm" firstAttribute="leading" secondItem="Wne-Dy-gO8" secondAttribute="trailing" constant="6" id="sce-pm-qNA"/>
+                            <constraint firstItem="nYN-81-Ef4" firstAttribute="leading" secondItem="gTh-9G-MDf" secondAttribute="leading" constant="15" id="si7-tH-lat"/>
+                            <constraint firstItem="vkP-Es-7Ye" firstAttribute="leading" secondItem="gTh-9G-MDf" secondAttribute="leading" constant="15" id="uyf-Z2-DPr"/>
+                            <constraint firstItem="vkc-U2-ogh" firstAttribute="top" secondItem="gTh-9G-MDf" secondAttribute="top" constant="16" id="wOU-xh-l0R"/>
+                            <constraint firstItem="mqD-rd-dLJ" firstAttribute="leading" secondItem="vkc-U2-ogh" secondAttribute="trailing" constant="3" id="ym8-4F-WJa"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="111" id="Mdd-VO-E4C"/>
+                        <constraint firstAttribute="width" constant="423" id="TdK-Nd-yfu"/>
+                    </constraints>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jKL-Fo-M4F" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="3pt-hL-CZx"/>
+                <constraint firstItem="jKL-Fo-M4F" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="55g-Jx-CA9"/>
+                <constraint firstAttribute="bottom" secondItem="jKL-Fo-M4F" secondAttribute="bottom" id="JiQ-cF-D6d"/>
+                <constraint firstAttribute="trailing" secondItem="jKL-Fo-M4F" secondAttribute="trailing" id="wP6-qq-0Zt"/>
+            </constraints>
+            <point key="canvasLocation" x="119.5" y="95.5"/>
+        </customView>
+    </objects>
+</document>

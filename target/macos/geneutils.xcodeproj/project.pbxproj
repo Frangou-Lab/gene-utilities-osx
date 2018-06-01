@@ -1,0 +1,2204 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF156CD61F596CE800D74DC4 /* FuzzySearchUnitTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF156CD51F596CE800D74DC4 /* FuzzySearchUnitTests.mm */; };
+		CF2C3B1320BFFB240067E511 /* GenomicCsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AEF20BFFB200067E511 /* GenomicCsvFileObj.m */; };
+		CF2C3B1520BFFB240067E511 /* GeneSequenceObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF020BFFB200067E511 /* GeneSequenceObj.m */; };
+		CF2C3B1720BFFB240067E511 /* SequenceFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF220BFFB200067E511 /* SequenceFileObj.m */; };
+		CF2C3B1920BFFB240067E511 /* ColumnTypesConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF320BFFB200067E511 /* ColumnTypesConfiguration.m */; };
+		CF2C3B1B20BFFB240067E511 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF520BFFB200067E511 /* Utils.m */; };
+		CF2C3B1D20BFFB240067E511 /* CommandLineFlagsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF620BFFB210067E511 /* CommandLineFlagsObj.m */; };
+		CF2C3B1F20BFFB240067E511 /* StringOutputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF720BFFB210067E511 /* StringOutputStreamObj.mm */; };
+		CF2C3B2120BFFB240067E511 /* CSVUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF820BFFB210067E511 /* CSVUtils.mm */; };
+		CF2C3B2320BFFB240067E511 /* FastqFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AFA20BFFB210067E511 /* FastqFileObj.m */; };
+		CF2C3B2720BFFB240067E511 /* GenomicTsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0220BFFB220067E511 /* GenomicTsvFileObj.m */; };
+		CF2C3B2920BFFB240067E511 /* InOutFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0420BFFB220067E511 /* InOutFile.m */; };
+		CF2C3B2B20BFFB240067E511 /* GenomicSeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0520BFFB220067E511 /* GenomicSeparatedFileObj.m */; };
+		CF2C3B2D20BFFB240067E511 /* Mutator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0620BFFB220067E511 /* Mutator.m */; };
+		CF2C3B2F20BFFB240067E511 /* OperationObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0920BFFB230067E511 /* OperationObj.m */; };
+		CF2C3B3320BFFB240067E511 /* StringInputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0C20BFFB230067E511 /* StringInputStreamObj.mm */; };
+		CF2C3B3520BFFB240067E511 /* SeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0F20BFFB240067E511 /* SeparatedFileObj.m */; };
+		CF2C3B3720BFFB240067E511 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1020BFFB240067E511 /* Lexer.m */; };
+		CF2C3B3920BFFB240067E511 /* FastaFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1120BFFB240067E511 /* FastaFileObj.m */; };
+		CF2C3B3D20BFFE600067E511 /* GUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B3C20BFFE600067E511 /* GUUtils.m */; };
+		CF2C3B4120C000860067E511 /* Mutator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0620BFFB220067E511 /* Mutator.m */; };
+		CF2C3B4220C000860067E511 /* SeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0F20BFFB240067E511 /* SeparatedFileObj.m */; };
+		CF2C3B4420C000860067E511 /* InOutFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0420BFFB220067E511 /* InOutFile.m */; };
+		CF2C3B4520C000860067E511 /* StringInputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0C20BFFB230067E511 /* StringInputStreamObj.mm */; };
+		CF2C3B4620C000860067E511 /* GeneSequenceObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF020BFFB200067E511 /* GeneSequenceObj.m */; };
+		CF2C3B4920C000860067E511 /* GUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B3C20BFFE600067E511 /* GUUtils.m */; };
+		CF2C3B4A20C000860067E511 /* GenomicCsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AEF20BFFB200067E511 /* GenomicCsvFileObj.m */; };
+		CF2C3B4C20C000860067E511 /* GUTabViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437791D98BF1800C7AB0E /* GUTabViewController.mm */; };
+		CF2C3B4E20C000860067E511 /* CSVUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF820BFFB210067E511 /* CSVUtils.mm */; };
+		CF2C3B4F20C000860067E511 /* GUProgressWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68368AB1D9CBA7000D43E05 /* GUProgressWindowController.mm */; };
+		CF2C3B5020C000860067E511 /* GenomicTsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0220BFFB220067E511 /* GenomicTsvFileObj.m */; };
+		CF2C3B5320C000860067E511 /* GenomicSeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0520BFFB220067E511 /* GenomicSeparatedFileObj.m */; };
+		CF2C3B5520C000860067E511 /* GULogController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437301D922F5F00C7AB0E /* GULogController.mm */; };
+		CF2C3B5720C000860067E511 /* ColumnTypesConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF320BFFB200067E511 /* ColumnTypesConfiguration.m */; };
+		CF2C3B5920C000860067E511 /* StringOutputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF720BFFB210067E511 /* StringOutputStreamObj.mm */; };
+		CF2C3B5A20C000860067E511 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF520BFFB200067E511 /* Utils.m */; };
+		CF2C3B5C20C000860067E511 /* OperationObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0920BFFB230067E511 /* OperationObj.m */; };
+		CF2C3B5F20C000860067E511 /* CommandLineFlagsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF620BFFB210067E511 /* CommandLineFlagsObj.m */; };
+		CF2C3B6020C000860067E511 /* GUFileFormatBoxController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4377E1D9A162700C7AB0E /* GUFileFormatBoxController.mm */; };
+		CF2C3B6120C000860067E511 /* GUConvertViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4C41A1DD4985300DA2F66 /* GUConvertViewController.mm */; };
+		CF2C3B6220C000860067E511 /* SequenceFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF220BFFB200067E511 /* SequenceFileObj.m */; };
+		CF2C3B6320C000860067E511 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1020BFFB240067E511 /* Lexer.m */; };
+		CF2C3B6420C000860067E511 /* FastaFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1120BFFB240067E511 /* FastaFileObj.m */; };
+		CF2C3B6720C000860067E511 /* FastqFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AFA20BFFB210067E511 /* FastqFileObj.m */; };
+		CF2C3B6920C000860067E511 /* libgene.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBEC62F20B5BE60003A43C2 /* libgene.a */; };
+		CF2C3B6A20C000860067E511 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1EFCFF1DF166AB00AE0CFB /* libz.tbd */; };
+		CF2C3B6C20C000860067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C437041D922E7700C7AB0E /* Assets.xcassets */; };
+		CF2C3B6E20C000860067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */ = {isa = PBXBuildFile; fileRef = CFB1040B1E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */; };
+		CF2C3B6F20C000860067E511 /* GUFileFormatBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF714C011E3A139600A7B58F /* GUFileFormatBox.xib */; };
+		CF2C3B7020C000860067E511 /* GUProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68368AC1D9CBA7000D43E05 /* GUProgressWindowController.xib */; };
+		CF2C3B7820C008C50067E511 /* Mutator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0620BFFB220067E511 /* Mutator.m */; };
+		CF2C3B7920C008C50067E511 /* SeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0F20BFFB240067E511 /* SeparatedFileObj.m */; };
+		CF2C3B7A20C008C50067E511 /* InOutFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0420BFFB220067E511 /* InOutFile.m */; };
+		CF2C3B7B20C008C50067E511 /* StringInputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0C20BFFB230067E511 /* StringInputStreamObj.mm */; };
+		CF2C3B7C20C008C50067E511 /* GeneSequenceObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF020BFFB200067E511 /* GeneSequenceObj.m */; };
+		CF2C3B7E20C008C50067E511 /* GUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B3C20BFFE600067E511 /* GUUtils.m */; };
+		CF2C3B7F20C008C50067E511 /* GenomicCsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AEF20BFFB200067E511 /* GenomicCsvFileObj.m */; };
+		CF2C3B8120C008C50067E511 /* GUTabViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437791D98BF1800C7AB0E /* GUTabViewController.mm */; };
+		CF2C3B8320C008C50067E511 /* CSVUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF820BFFB210067E511 /* CSVUtils.mm */; };
+		CF2C3B8420C008C50067E511 /* GUProgressWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68368AB1D9CBA7000D43E05 /* GUProgressWindowController.mm */; };
+		CF2C3B8520C008C50067E511 /* GenomicTsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0220BFFB220067E511 /* GenomicTsvFileObj.m */; };
+		CF2C3B8720C008C50067E511 /* GenomicSeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0520BFFB220067E511 /* GenomicSeparatedFileObj.m */; };
+		CF2C3B8920C008C50067E511 /* GULogController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437301D922F5F00C7AB0E /* GULogController.mm */; };
+		CF2C3B8A20C008C50067E511 /* ColumnTypesConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF320BFFB200067E511 /* ColumnTypesConfiguration.m */; };
+		CF2C3B8C20C008C50067E511 /* StringOutputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF720BFFB210067E511 /* StringOutputStreamObj.mm */; };
+		CF2C3B8D20C008C50067E511 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF520BFFB200067E511 /* Utils.m */; };
+		CF2C3B8F20C008C50067E511 /* OperationObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0920BFFB230067E511 /* OperationObj.m */; };
+		CF2C3B9120C008C50067E511 /* CommandLineFlagsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF620BFFB210067E511 /* CommandLineFlagsObj.m */; };
+		CF2C3B9220C008C50067E511 /* GUFileFormatBoxController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4377E1D9A162700C7AB0E /* GUFileFormatBoxController.mm */; };
+		CF2C3B9420C008C50067E511 /* SequenceFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF220BFFB200067E511 /* SequenceFileObj.m */; };
+		CF2C3B9520C008C50067E511 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1020BFFB240067E511 /* Lexer.m */; };
+		CF2C3B9620C008C50067E511 /* FastaFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1120BFFB240067E511 /* FastaFileObj.m */; };
+		CF2C3B9920C008C50067E511 /* FastqFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AFA20BFFB210067E511 /* FastqFileObj.m */; };
+		CF2C3B9B20C008C50067E511 /* libgene.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBEC62F20B5BE60003A43C2 /* libgene.a */; };
+		CF2C3B9C20C008C50067E511 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1EFCFF1DF166AB00AE0CFB /* libz.tbd */; };
+		CF2C3B9E20C008C50067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C437041D922E7700C7AB0E /* Assets.xcassets */; };
+		CF2C3BA020C008C50067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */ = {isa = PBXBuildFile; fileRef = CFB1040B1E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */; };
+		CF2C3BA120C008C50067E511 /* GUFileFormatBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF714C011E3A139600A7B58F /* GUFileFormatBox.xib */; };
+		CF2C3BA220C008C50067E511 /* GUProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68368AC1D9CBA7000D43E05 /* GUProgressWindowController.xib */; };
+		CF2C3BDC20C0093B0067E511 /* Mutator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0620BFFB220067E511 /* Mutator.m */; };
+		CF2C3BDD20C0093B0067E511 /* SeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0F20BFFB240067E511 /* SeparatedFileObj.m */; };
+		CF2C3BDE20C0093B0067E511 /* InOutFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0420BFFB220067E511 /* InOutFile.m */; };
+		CF2C3BDF20C0093B0067E511 /* StringInputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0C20BFFB230067E511 /* StringInputStreamObj.mm */; };
+		CF2C3BE020C0093B0067E511 /* GeneSequenceObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF020BFFB200067E511 /* GeneSequenceObj.m */; };
+		CF2C3BE220C0093B0067E511 /* GUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B3C20BFFE600067E511 /* GUUtils.m */; };
+		CF2C3BE320C0093B0067E511 /* GenomicCsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AEF20BFFB200067E511 /* GenomicCsvFileObj.m */; };
+		CF2C3BE520C0093B0067E511 /* GUTabViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437791D98BF1800C7AB0E /* GUTabViewController.mm */; };
+		CF2C3BE720C0093B0067E511 /* CSVUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF820BFFB210067E511 /* CSVUtils.mm */; };
+		CF2C3BE820C0093B0067E511 /* GUProgressWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68368AB1D9CBA7000D43E05 /* GUProgressWindowController.mm */; };
+		CF2C3BE920C0093B0067E511 /* GenomicTsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0220BFFB220067E511 /* GenomicTsvFileObj.m */; };
+		CF2C3BEB20C0093B0067E511 /* GenomicSeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0520BFFB220067E511 /* GenomicSeparatedFileObj.m */; };
+		CF2C3BED20C0093B0067E511 /* GULogController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437301D922F5F00C7AB0E /* GULogController.mm */; };
+		CF2C3BEE20C0093B0067E511 /* ColumnTypesConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF320BFFB200067E511 /* ColumnTypesConfiguration.m */; };
+		CF2C3BF020C0093B0067E511 /* StringOutputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF720BFFB210067E511 /* StringOutputStreamObj.mm */; };
+		CF2C3BF120C0093B0067E511 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF520BFFB200067E511 /* Utils.m */; };
+		CF2C3BF320C0093B0067E511 /* OperationObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0920BFFB230067E511 /* OperationObj.m */; };
+		CF2C3BF520C0093B0067E511 /* CommandLineFlagsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF620BFFB210067E511 /* CommandLineFlagsObj.m */; };
+		CF2C3BF620C0093B0067E511 /* GUFileFormatBoxController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4377E1D9A162700C7AB0E /* GUFileFormatBoxController.mm */; };
+		CF2C3BF820C0093B0067E511 /* SequenceFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF220BFFB200067E511 /* SequenceFileObj.m */; };
+		CF2C3BF920C0093B0067E511 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1020BFFB240067E511 /* Lexer.m */; };
+		CF2C3BFA20C0093B0067E511 /* FastaFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1120BFFB240067E511 /* FastaFileObj.m */; };
+		CF2C3BFD20C0093B0067E511 /* FastqFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AFA20BFFB210067E511 /* FastqFileObj.m */; };
+		CF2C3BFF20C0093B0067E511 /* libgene.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBEC62F20B5BE60003A43C2 /* libgene.a */; };
+		CF2C3C0020C0093B0067E511 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1EFCFF1DF166AB00AE0CFB /* libz.tbd */; };
+		CF2C3C0220C0093B0067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C437041D922E7700C7AB0E /* Assets.xcassets */; };
+		CF2C3C0420C0093B0067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */ = {isa = PBXBuildFile; fileRef = CFB1040B1E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */; };
+		CF2C3C0520C0093B0067E511 /* GUFileFormatBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF714C011E3A139600A7B58F /* GUFileFormatBox.xib */; };
+		CF2C3C0620C0093B0067E511 /* GUProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68368AC1D9CBA7000D43E05 /* GUProgressWindowController.xib */; };
+		CF2C3C0E20C009610067E511 /* Mutator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0620BFFB220067E511 /* Mutator.m */; };
+		CF2C3C0F20C009610067E511 /* SeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0F20BFFB240067E511 /* SeparatedFileObj.m */; };
+		CF2C3C1020C009610067E511 /* InOutFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0420BFFB220067E511 /* InOutFile.m */; };
+		CF2C3C1120C009610067E511 /* StringInputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0C20BFFB230067E511 /* StringInputStreamObj.mm */; };
+		CF2C3C1220C009610067E511 /* GeneSequenceObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF020BFFB200067E511 /* GeneSequenceObj.m */; };
+		CF2C3C1420C009610067E511 /* GUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B3C20BFFE600067E511 /* GUUtils.m */; };
+		CF2C3C1520C009610067E511 /* GenomicCsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AEF20BFFB200067E511 /* GenomicCsvFileObj.m */; };
+		CF2C3C1720C009610067E511 /* GUTabViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437791D98BF1800C7AB0E /* GUTabViewController.mm */; };
+		CF2C3C1920C009610067E511 /* CSVUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF820BFFB210067E511 /* CSVUtils.mm */; };
+		CF2C3C1A20C009610067E511 /* GUProgressWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68368AB1D9CBA7000D43E05 /* GUProgressWindowController.mm */; };
+		CF2C3C1B20C009610067E511 /* GenomicTsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0220BFFB220067E511 /* GenomicTsvFileObj.m */; };
+		CF2C3C1D20C009610067E511 /* GenomicSeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0520BFFB220067E511 /* GenomicSeparatedFileObj.m */; };
+		CF2C3C1F20C009610067E511 /* GULogController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437301D922F5F00C7AB0E /* GULogController.mm */; };
+		CF2C3C2020C009610067E511 /* ColumnTypesConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF320BFFB200067E511 /* ColumnTypesConfiguration.m */; };
+		CF2C3C2220C009610067E511 /* StringOutputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF720BFFB210067E511 /* StringOutputStreamObj.mm */; };
+		CF2C3C2320C009610067E511 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF520BFFB200067E511 /* Utils.m */; };
+		CF2C3C2520C009610067E511 /* OperationObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0920BFFB230067E511 /* OperationObj.m */; };
+		CF2C3C2720C009610067E511 /* CommandLineFlagsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF620BFFB210067E511 /* CommandLineFlagsObj.m */; };
+		CF2C3C2820C009610067E511 /* GUFileFormatBoxController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4377E1D9A162700C7AB0E /* GUFileFormatBoxController.mm */; };
+		CF2C3C2A20C009610067E511 /* SequenceFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF220BFFB200067E511 /* SequenceFileObj.m */; };
+		CF2C3C2B20C009610067E511 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1020BFFB240067E511 /* Lexer.m */; };
+		CF2C3C2C20C009610067E511 /* FastaFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1120BFFB240067E511 /* FastaFileObj.m */; };
+		CF2C3C2F20C009610067E511 /* FastqFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AFA20BFFB210067E511 /* FastqFileObj.m */; };
+		CF2C3C3120C009610067E511 /* libgene.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBEC62F20B5BE60003A43C2 /* libgene.a */; };
+		CF2C3C3220C009610067E511 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1EFCFF1DF166AB00AE0CFB /* libz.tbd */; };
+		CF2C3C3420C009610067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C437041D922E7700C7AB0E /* Assets.xcassets */; };
+		CF2C3C3620C009610067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */ = {isa = PBXBuildFile; fileRef = CFB1040B1E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */; };
+		CF2C3C3720C009610067E511 /* GUFileFormatBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF714C011E3A139600A7B58F /* GUFileFormatBox.xib */; };
+		CF2C3C3820C009610067E511 /* GUProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68368AC1D9CBA7000D43E05 /* GUProgressWindowController.xib */; };
+		CF2C3C4020C009700067E511 /* Mutator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0620BFFB220067E511 /* Mutator.m */; };
+		CF2C3C4120C009700067E511 /* SeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0F20BFFB240067E511 /* SeparatedFileObj.m */; };
+		CF2C3C4220C009700067E511 /* InOutFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0420BFFB220067E511 /* InOutFile.m */; };
+		CF2C3C4320C009700067E511 /* StringInputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0C20BFFB230067E511 /* StringInputStreamObj.mm */; };
+		CF2C3C4420C009700067E511 /* GeneSequenceObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF020BFFB200067E511 /* GeneSequenceObj.m */; };
+		CF2C3C4620C009700067E511 /* GUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B3C20BFFE600067E511 /* GUUtils.m */; };
+		CF2C3C4720C009700067E511 /* GenomicCsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AEF20BFFB200067E511 /* GenomicCsvFileObj.m */; };
+		CF2C3C4920C009700067E511 /* GUTabViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437791D98BF1800C7AB0E /* GUTabViewController.mm */; };
+		CF2C3C4B20C009700067E511 /* CSVUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF820BFFB210067E511 /* CSVUtils.mm */; };
+		CF2C3C4C20C009700067E511 /* GUProgressWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68368AB1D9CBA7000D43E05 /* GUProgressWindowController.mm */; };
+		CF2C3C4D20C009700067E511 /* GenomicTsvFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0220BFFB220067E511 /* GenomicTsvFileObj.m */; };
+		CF2C3C4F20C009700067E511 /* GenomicSeparatedFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0520BFFB220067E511 /* GenomicSeparatedFileObj.m */; };
+		CF2C3C5120C009700067E511 /* GULogController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437301D922F5F00C7AB0E /* GULogController.mm */; };
+		CF2C3C5220C009700067E511 /* ColumnTypesConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF320BFFB200067E511 /* ColumnTypesConfiguration.m */; };
+		CF2C3C5420C009700067E511 /* StringOutputStreamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF720BFFB210067E511 /* StringOutputStreamObj.mm */; };
+		CF2C3C5520C009700067E511 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF520BFFB200067E511 /* Utils.m */; };
+		CF2C3C5720C009700067E511 /* OperationObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B0920BFFB230067E511 /* OperationObj.m */; };
+		CF2C3C5920C009700067E511 /* CommandLineFlagsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF620BFFB210067E511 /* CommandLineFlagsObj.m */; };
+		CF2C3C5A20C009700067E511 /* GUFileFormatBoxController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4377E1D9A162700C7AB0E /* GUFileFormatBoxController.mm */; };
+		CF2C3C5C20C009700067E511 /* SequenceFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AF220BFFB200067E511 /* SequenceFileObj.m */; };
+		CF2C3C5D20C009700067E511 /* Lexer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1020BFFB240067E511 /* Lexer.m */; };
+		CF2C3C5E20C009700067E511 /* FastaFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3B1120BFFB240067E511 /* FastaFileObj.m */; };
+		CF2C3C6120C009700067E511 /* FastqFileObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AFA20BFFB210067E511 /* FastqFileObj.m */; };
+		CF2C3C6320C009700067E511 /* libgene.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBEC62F20B5BE60003A43C2 /* libgene.a */; };
+		CF2C3C6420C009700067E511 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1EFCFF1DF166AB00AE0CFB /* libz.tbd */; };
+		CF2C3C6620C009700067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C437041D922E7700C7AB0E /* Assets.xcassets */; };
+		CF2C3C6820C009700067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */ = {isa = PBXBuildFile; fileRef = CFB1040B1E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */; };
+		CF2C3C6920C009700067E511 /* GUFileFormatBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF714C011E3A139600A7B58F /* GUFileFormatBox.xib */; };
+		CF2C3C6A20C009700067E511 /* GUProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68368AC1D9CBA7000D43E05 /* GUProgressWindowController.xib */; };
+		CF2C3C7020C009970067E511 /* GUMergeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4C4231DD4988E00DA2F66 /* GUMergeViewController.mm */; };
+		CF2C3C7120C0099C0067E511 /* GUSplitViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4C4291DD498B900DA2F66 /* GUSplitViewController.mm */; };
+		CF2C3C7220C0099F0067E511 /* GUExtractViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4C41D1DD4986B00DA2F66 /* GUExtractViewController.mm */; };
+		CF2C3C7420C009A40067E511 /* GUMutateViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68368A81D9BEC5300D43E05 /* GUMutateViewController.mm */; };
+		CF2C3C8C20C00D0E0067E511 /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C7920C00D0E0067E511 /* Converter.cpp */; };
+		CF2C3C8D20C00D0E0067E511 /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C7920C00D0E0067E511 /* Converter.cpp */; };
+		CF2C3C8E20C00D0E0067E511 /* Extractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C7C20C00D0E0067E511 /* Extractor.cpp */; };
+		CF2C3C8F20C00D0E0067E511 /* Extractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C7C20C00D0E0067E511 /* Extractor.cpp */; };
+		CF2C3C9420C00D0E0067E511 /* Merger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C8720C00D0E0067E511 /* Merger.cpp */; };
+		CF2C3C9520C00D0E0067E511 /* Merger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C8720C00D0E0067E511 /* Merger.cpp */; };
+		CF2C3C9620C00D0E0067E511 /* Splitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C8A20C00D0E0067E511 /* Splitter.cpp */; };
+		CF2C3C9720C00D0E0067E511 /* Splitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C8A20C00D0E0067E511 /* Splitter.cpp */; };
+		CF2C3CA220C00D480067E511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C9A20C00D480067E511 /* AppDelegate.m */; };
+		CF2C3CA320C00D480067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3C9B20C00D480067E511 /* Assets.xcassets */; };
+		CF2C3CA620C00D480067E511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C9F20C00D480067E511 /* main.m */; };
+		CF2C3CA720C00D480067E511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CA120C00D480067E511 /* ViewController.m */; };
+		CF2C3CB220C00D590067E511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CAA20C00D590067E511 /* AppDelegate.m */; };
+		CF2C3CB320C00D590067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CAB20C00D590067E511 /* Assets.xcassets */; };
+		CF2C3CB620C00D590067E511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CAF20C00D590067E511 /* main.m */; };
+		CF2C3CB720C00D590067E511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CB120C00D590067E511 /* ViewController.m */; };
+		CF2C3CC220C00D660067E511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CBA20C00D660067E511 /* AppDelegate.m */; };
+		CF2C3CC320C00D660067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CBB20C00D660067E511 /* Assets.xcassets */; };
+		CF2C3CC620C00D660067E511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CBF20C00D660067E511 /* main.m */; };
+		CF2C3CC720C00D660067E511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CC120C00D660067E511 /* ViewController.m */; };
+		CF2C3CD220C00D750067E511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CCA20C00D750067E511 /* AppDelegate.m */; };
+		CF2C3CD320C00D750067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CCB20C00D750067E511 /* Assets.xcassets */; };
+		CF2C3CD620C00D750067E511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CCF20C00D750067E511 /* main.m */; };
+		CF2C3CD720C00D750067E511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CD120C00D750067E511 /* ViewController.m */; };
+		CF2C3CE220C00D8B0067E511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CDA20C00D8B0067E511 /* AppDelegate.m */; };
+		CF2C3CE320C00D8B0067E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CDB20C00D8B0067E511 /* Assets.xcassets */; };
+		CF2C3CE620C00D8B0067E511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CDF20C00D8B0067E511 /* main.m */; };
+		CF2C3CE720C00D8B0067E511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3CE120C00D8B0067E511 /* ViewController.m */; };
+		CF2C3CE920C00EA70067E511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CE820C00EA70067E511 /* Main.storyboard */; };
+		CF2C3CEB20C00EB60067E511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CEA20C00EB60067E511 /* Main.storyboard */; };
+		CF2C3CED20C00ECE0067E511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CEC20C00ECE0067E511 /* Main.storyboard */; };
+		CF2C3CF120C00EEB0067E511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CF020C00EEB0067E511 /* Main.storyboard */; };
+		CF2C3CF320C00EFD0067E511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CF220C00EFC0067E511 /* Main.storyboard */; };
+		CF2C3CF520C00F160067E511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3CF420C00F160067E511 /* Main.storyboard */; };
+		CF2C3CF620C012E80067E511 /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C7920C00D0E0067E511 /* Converter.cpp */; };
+		CF2C3CF720C012EC0067E511 /* Extractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C7C20C00D0E0067E511 /* Extractor.cpp */; };
+		CF2C3CFA20C012FA0067E511 /* Merger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C8720C00D0E0067E511 /* Merger.cpp */; };
+		CF2C3CFB20C012FE0067E511 /* Splitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3C8A20C00D0E0067E511 /* Splitter.cpp */; };
+		CF5732E51E7954B100AF8141 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1EFCFF1DF166AB00AE0CFB /* libz.tbd */; };
+		CF5A6F9B1E8D0F4D00CBDA42 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1EFCFF1DF166AB00AE0CFB /* libz.tbd */; };
+		CF714C021E3A139600A7B58F /* GUFileFormatBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF714C011E3A139600A7B58F /* GUFileFormatBox.xib */; };
+		CFB104721E8533C500544043 /* Illumina1_8ReferenceOutput.fastq in Resources */ = {isa = PBXBuildFile; fileRef = CFB1040B1E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */; };
+		CFB104C11E8533D800544043 /* ConvertSuite.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFB104081E8533C500544043 /* ConvertSuite.mm */; };
+		CFB104C31E85349000544043 /* ExtractSuite.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFB1043E1E8533C500544043 /* ExtractSuite.mm */; };
+		CFBEC63020B5BE60003A43C2 /* libgene.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBEC62F20B5BE60003A43C2 /* libgene.a */; };
+		D6774DC61DDC9489002843AA /* GUConvertViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4C41A1DD4985300DA2F66 /* GUConvertViewController.mm */; };
+		D68368A61D9BA66400D43E05 /* GUApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68368A51D9BA66400D43E05 /* GUApplication.mm */; };
+		D68368AD1D9CBA7000D43E05 /* GUProgressWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68368AB1D9CBA7000D43E05 /* GUProgressWindowController.mm */; };
+		D68368AE1D9CBA7000D43E05 /* GUProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68368AC1D9CBA7000D43E05 /* GUProgressWindowController.xib */; };
+		D6C437001D922E7700C7AB0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C436FF1D922E7700C7AB0E /* main.m */; };
+		D6C437051D922E7700C7AB0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C437041D922E7700C7AB0E /* Assets.xcassets */; };
+		D6C437311D922F5F00C7AB0E /* GeneUtilsAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4372C1D922F5F00C7AB0E /* GeneUtilsAppDelegate.mm */; };
+		D6C437331D922F5F00C7AB0E /* GULogController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437301D922F5F00C7AB0E /* GULogController.mm */; };
+		D6C437361D922F6D00C7AB0E /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437351D922F6D00C7AB0E /* ViewController.mm */; };
+		D6C4377B1D98BF1800C7AB0E /* GUTabViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C437791D98BF1800C7AB0E /* GUTabViewController.mm */; };
+		D6C4377F1D9A162700C7AB0E /* GUFileFormatBoxController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4377E1D9A162700C7AB0E /* GUFileFormatBoxController.mm */; };
+		D6C4C46D1DD576A000DA2F66 /* GUExtractViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4C41D1DD4986B00DA2F66 /* GUExtractViewController.mm */; };
+		D6C4C46E1DD576AC00DA2F66 /* GUMutateViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68368A81D9BEC5300D43E05 /* GUMutateViewController.mm */; };
+		D6C4C46F1DD576B500DA2F66 /* GUSplitViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4C4291DD498B900DA2F66 /* GUSplitViewController.mm */; };
+		D6C4C4701DD576B800DA2F66 /* GUMergeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C4C4231DD4988E00DA2F66 /* GUMergeViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6C4370F1D922E7700C7AB0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF25FE101BFF37460055CEE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6C436F81D922E7700C7AB0E;
+			remoteInfo = GeneUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF5A6F9C1E8D0F4D00CBDA42 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF156CD51F596CE800D74DC4 /* FuzzySearchUnitTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FuzzySearchUnitTests.mm; sourceTree = "<group>"; };
+		CF1EFCFF1DF166AB00AE0CFB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CF2C3AEB20BFFB1F0067E511 /* FastqFileObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastqFileObj.h; sourceTree = "<group>"; };
+		CF2C3AEC20BFFB1F0067E511 /* GenomicTsvFileObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenomicTsvFileObj.h; sourceTree = "<group>"; };
+		CF2C3AED20BFFB1F0067E511 /* ColumnType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnType.h; sourceTree = "<group>"; };
+		CF2C3AEE20BFFB200067E511 /* FastaFileObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastaFileObj.h; sourceTree = "<group>"; };
+		CF2C3AEF20BFFB200067E511 /* GenomicCsvFileObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenomicCsvFileObj.m; sourceTree = "<group>"; };
+		CF2C3AF020BFFB200067E511 /* GeneSequenceObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneSequenceObj.m; sourceTree = "<group>"; };
+		CF2C3AF120BFFB200067E511 /* Mutator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mutator.h; sourceTree = "<group>"; };
+		CF2C3AF220BFFB200067E511 /* SequenceFileObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequenceFileObj.m; sourceTree = "<group>"; };
+		CF2C3AF320BFFB200067E511 /* ColumnTypesConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnTypesConfiguration.m; sourceTree = "<group>"; };
+		CF2C3AF420BFFB200067E511 /* ColumnTypesConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnTypesConfiguration.h; sourceTree = "<group>"; };
+		CF2C3AF520BFFB200067E511 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		CF2C3AF620BFFB210067E511 /* CommandLineFlagsObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandLineFlagsObj.m; sourceTree = "<group>"; };
+		CF2C3AF720BFFB210067E511 /* StringOutputStreamObj.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StringOutputStreamObj.mm; sourceTree = "<group>"; };
+		CF2C3AF820BFFB210067E511 /* CSVUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CSVUtils.mm; sourceTree = "<group>"; };
+		CF2C3AF920BFFB210067E511 /* CSVUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVUtils.h; sourceTree = "<group>"; };
+		CF2C3AFA20BFFB210067E511 /* FastqFileObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastqFileObj.m; sourceTree = "<group>"; };
+		CF2C3AFB20BFFB210067E511 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		CF2C3AFC20BFFB210067E511 /* StringInputStreamObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringInputStreamObj.h; sourceTree = "<group>"; };
+		CF2C3AFD20BFFB210067E511 /* SequenceFileObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequenceFileObj.h; sourceTree = "<group>"; };
+		CF2C3AFE20BFFB210067E511 /* GeneSequenceObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneSequenceObj.h; sourceTree = "<group>"; };
+		CF2C3AFF20BFFB220067E511 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		CF2C3B0020BFFB220067E511 /* InOutFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InOutFile.h; sourceTree = "<group>"; };
+		CF2C3B0220BFFB220067E511 /* GenomicTsvFileObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenomicTsvFileObj.m; sourceTree = "<group>"; };
+		CF2C3B0320BFFB220067E511 /* CommandLineFlagsObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandLineFlagsObj.h; sourceTree = "<group>"; };
+		CF2C3B0420BFFB220067E511 /* InOutFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InOutFile.m; sourceTree = "<group>"; };
+		CF2C3B0520BFFB220067E511 /* GenomicSeparatedFileObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenomicSeparatedFileObj.m; sourceTree = "<group>"; };
+		CF2C3B0620BFFB220067E511 /* Mutator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mutator.m; sourceTree = "<group>"; };
+		CF2C3B0720BFFB220067E511 /* OperationObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationObj.h; sourceTree = "<group>"; };
+		CF2C3B0820BFFB230067E511 /* GenomicCsvFileObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenomicCsvFileObj.h; sourceTree = "<group>"; };
+		CF2C3B0920BFFB230067E511 /* OperationObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationObj.m; sourceTree = "<group>"; };
+		CF2C3B0A20BFFB230067E511 /* SeparatedFileObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeparatedFileObj.h; sourceTree = "<group>"; };
+		CF2C3B0C20BFFB230067E511 /* StringInputStreamObj.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StringInputStreamObj.mm; sourceTree = "<group>"; };
+		CF2C3B0D20BFFB230067E511 /* StringOutputStreamObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOutputStreamObj.h; sourceTree = "<group>"; };
+		CF2C3B0E20BFFB240067E511 /* Lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lexer.h; sourceTree = "<group>"; };
+		CF2C3B0F20BFFB240067E511 /* SeparatedFileObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeparatedFileObj.m; sourceTree = "<group>"; };
+		CF2C3B1020BFFB240067E511 /* Lexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lexer.m; sourceTree = "<group>"; };
+		CF2C3B1120BFFB240067E511 /* FastaFileObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastaFileObj.m; sourceTree = "<group>"; };
+		CF2C3B1220BFFB240067E511 /* GenomicSeparatedFileObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenomicSeparatedFileObj.h; sourceTree = "<group>"; };
+		CF2C3B3B20BFFE5F0067E511 /* GUUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUUtils.h; sourceTree = "<group>"; };
+		CF2C3B3C20BFFE600067E511 /* GUUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUUtils.m; sourceTree = "<group>"; };
+		CF2C3B7420C000860067E511 /* Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2C3BA620C008C50067E511 /* Splitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2C3C0A20C0093B0067E511 /* Merger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Merger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2C3C3C20C009610067E511 /* Extractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2C3C6E20C009700067E511 /* Mutator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mutator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2C3C7920C00D0E0067E511 /* Converter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Converter.cpp; sourceTree = "<group>"; };
+		CF2C3C7A20C00D0E0067E511 /* Converter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Converter.hpp; sourceTree = "<group>"; };
+		CF2C3C7C20C00D0E0067E511 /* Extractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Extractor.cpp; sourceTree = "<group>"; };
+		CF2C3C7D20C00D0E0067E511 /* Extractor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Extractor.hpp; sourceTree = "<group>"; };
+		CF2C3C7E20C00D0E0067E511 /* ExtractorJob.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ExtractorJob.hpp; sourceTree = "<group>"; };
+		CF2C3C8720C00D0E0067E511 /* Merger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Merger.cpp; sourceTree = "<group>"; };
+		CF2C3C8820C00D0E0067E511 /* Merger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Merger.hpp; sourceTree = "<group>"; };
+		CF2C3C8A20C00D0E0067E511 /* Splitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Splitter.cpp; sourceTree = "<group>"; };
+		CF2C3C8B20C00D0E0067E511 /* Splitter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Splitter.hpp; sourceTree = "<group>"; };
+		CF2C3C9920C00D480067E511 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF2C3C9A20C00D480067E511 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF2C3C9B20C00D480067E511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2C3C9E20C00D480067E511 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2C3C9F20C00D480067E511 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF2C3CA020C00D480067E511 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF2C3CA120C00D480067E511 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF2C3CA920C00D590067E511 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF2C3CAA20C00D590067E511 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF2C3CAB20C00D590067E511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2C3CAE20C00D590067E511 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2C3CAF20C00D590067E511 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF2C3CB020C00D590067E511 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF2C3CB120C00D590067E511 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF2C3CB920C00D660067E511 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF2C3CBA20C00D660067E511 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF2C3CBB20C00D660067E511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2C3CBE20C00D660067E511 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2C3CBF20C00D660067E511 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF2C3CC020C00D660067E511 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF2C3CC120C00D660067E511 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF2C3CC920C00D750067E511 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF2C3CCA20C00D750067E511 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF2C3CCB20C00D750067E511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2C3CCE20C00D750067E511 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2C3CCF20C00D750067E511 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF2C3CD020C00D750067E511 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF2C3CD120C00D750067E511 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF2C3CD920C00D8B0067E511 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF2C3CDA20C00D8B0067E511 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF2C3CDB20C00D8B0067E511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2C3CDE20C00D8B0067E511 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2C3CDF20C00D8B0067E511 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF2C3CE020C00D8B0067E511 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF2C3CE120C00D8B0067E511 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF2C3CE820C00EA70067E511 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF2C3CEA20C00EB60067E511 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF2C3CEC20C00ECE0067E511 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF2C3CF020C00EEB0067E511 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF2C3CF220C00EFC0067E511 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF2C3CF420C00F160067E511 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF5A6FA01E8D0F4D00CBDA42 /* geneutils copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "geneutils copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF714C011E3A139600A7B58F /* GUFileFormatBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GUFileFormatBox.xib; sourceTree = "<group>"; };
+		CFB104081E8533C500544043 /* ConvertSuite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConvertSuite.mm; sourceTree = "<group>"; };
+		CFB1040A1E8533C500544043 /* Illumina1_3Input.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_3Input.fastq; sourceTree = "<group>"; };
+		CFB1040B1E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_8ReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB1040D1E8533C500544043 /* Illumina1_3Input.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_3Input.fastq; sourceTree = "<group>"; };
+		CFB1040E1E8533C500544043 /* SangerReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SangerReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB104101E8533C500544043 /* Illumina1_3ReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_3ReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB104111E8533C500544043 /* Illumina1_8Input.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_8Input.fastq; sourceTree = "<group>"; };
+		CFB104131E8533C500544043 /* Illumina1_8Input.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_8Input.fastq; sourceTree = "<group>"; };
+		CFB104141E8533C500544043 /* SangerReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SangerReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB104161E8533C500544043 /* Illumina1_3ReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_3ReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB104171E8533C500544043 /* SolexaInput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SolexaInput.fastq; sourceTree = "<group>"; };
+		CFB104191E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_8ReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB1041A1E8533C500544043 /* SolexaInput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SolexaInput.fastq; sourceTree = "<group>"; };
+		CFB1041C1E8533C500544043 /* IlluminaSimpleInput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IlluminaSimpleInput.fastq; sourceTree = "<group>"; };
+		CFB1041D1E8533C500544043 /* IlluminaSimpleReferenceOutput.fasta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IlluminaSimpleReferenceOutput.fasta; sourceTree = "<group>"; };
+		CFB1041F1E8533C500544043 /* NonQuotedCsvSimpleInput.csvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NonQuotedCsvSimpleInput.csvc; sourceTree = "<group>"; };
+		CFB104201E8533C500544043 /* NonQuotedCsvSimpleInput.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NonQuotedCsvSimpleInput.ctp; sourceTree = "<group>"; };
+		CFB104211E8533C500544043 /* NonQuotedFastQSimpleReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NonQuotedFastQSimpleReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB104221E8533C500544043 /* QuotedCsvSimpleInput.csvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuotedCsvSimpleInput.csvc; sourceTree = "<group>"; };
+		CFB104231E8533C500544043 /* QuotedCsvSimpleInput.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = QuotedCsvSimpleInput.ctp; sourceTree = "<group>"; };
+		CFB104241E8533C500544043 /* QuotedCsvWithQuotesInput.csvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuotedCsvWithQuotesInput.csvc; sourceTree = "<group>"; };
+		CFB104251E8533C500544043 /* QuotedCsvWithQuotesInput.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = QuotedCsvWithQuotesInput.ctp; sourceTree = "<group>"; };
+		CFB104261E8533C500544043 /* QuotedFastQSimpleReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuotedFastQSimpleReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB104271E8533C500544043 /* QuotedFastQWithQuotesReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuotedFastQWithQuotesReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB104291E8533C500544043 /* QuotedTsvWithQuotesInput.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = QuotedTsvWithQuotesInput.ctp; sourceTree = "<group>"; };
+		CFB1042A1E8533C500544043 /* QuotedTsvWithQuotesInput.tsvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuotedTsvWithQuotesInput.tsvc; sourceTree = "<group>"; };
+		CFB1042B1E8533C500544043 /* QuotedTsvWithQuotesOutput.csvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuotedTsvWithQuotesOutput.csvc; sourceTree = "<group>"; };
+		CFB1042C1E8533C500544043 /* QuotedTsvWithQuotesOutput.ctp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = QuotedTsvWithQuotesOutput.ctp; sourceTree = "<group>"; };
+		CFB1042E1E8533C500544043 /* Illumina1_3ReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_3ReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB1042F1E8533C500544043 /* SangerInput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SangerInput.fastq; sourceTree = "<group>"; };
+		CFB104311E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Illumina1_8ReferenceOutput.fastq; sourceTree = "<group>"; };
+		CFB104321E8533C500544043 /* SangerInput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SangerInput.fastq; sourceTree = "<group>"; };
+		CFB104351E8533C500544043 /* IlluminaSimpleInput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IlluminaSimpleInput.fastq; sourceTree = "<group>"; };
+		CFB104361E8533C500544043 /* IlluminaSimpleReferenceOutput_ATTCAGAN.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IlluminaSimpleReferenceOutput_ATTCAGAN.fastq; sourceTree = "<group>"; };
+		CFB104371E8533C500544043 /* IlluminaSimpleReferenceOutput_GAATTCGN.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IlluminaSimpleReferenceOutput_GAATTCGN.fastq; sourceTree = "<group>"; };
+		CFB104381E8533C500544043 /* IlluminaSimpleReferenceOutput_TCCGGAAA.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IlluminaSimpleReferenceOutput_TCCGGAAA.fastq; sourceTree = "<group>"; };
+		CFB1043A1E8533C500544043 /* SolexaSimpleInput.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SolexaSimpleInput.fastq; sourceTree = "<group>"; };
+		CFB1043B1E8533C500544043 /* SolexaSimpleReferenceOutput_CATTGCTG_N35.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SolexaSimpleReferenceOutput_CATTGCTG_N35.fastq; sourceTree = "<group>"; };
+		CFB1043C1E8533C500544043 /* SolexaSimpleReferenceOutput_TCATTACT_N35.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SolexaSimpleReferenceOutput_TCATTACT_N35.fastq; sourceTree = "<group>"; };
+		CFB1043D1E8533C500544043 /* SolexaSimpleReferenceOutput_TCATTGCT_N35.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SolexaSimpleReferenceOutput_TCATTGCT_N35.fastq; sourceTree = "<group>"; };
+		CFB1043E1E8533C500544043 /* ExtractSuite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExtractSuite.mm; sourceTree = "<group>"; };
+		CFB1046E1E8533C500544043 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBEC62F20B5BE60003A43C2 /* libgene.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgene.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68368A41D9BA66400D43E05 /* GUApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUApplication.h; sourceTree = "<group>"; };
+		D68368A51D9BA66400D43E05 /* GUApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUApplication.mm; sourceTree = "<group>"; };
+		D68368A71D9BEC5300D43E05 /* GUMutateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUMutateViewController.h; sourceTree = "<group>"; };
+		D68368A81D9BEC5300D43E05 /* GUMutateViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUMutateViewController.mm; sourceTree = "<group>"; };
+		D68368AA1D9CBA7000D43E05 /* GUProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUProgressWindowController.h; sourceTree = "<group>"; };
+		D68368AB1D9CBA7000D43E05 /* GUProgressWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUProgressWindowController.mm; sourceTree = "<group>"; };
+		D68368AC1D9CBA7000D43E05 /* GUProgressWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GUProgressWindowController.xib; sourceTree = "<group>"; };
+		D6C3646F1D9A519500B4D875 /* GUFileFormatBoxProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GUFileFormatBoxProtocol.h; sourceTree = "<group>"; };
+		D6C436F91D922E7700C7AB0E /* GeneUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C436FF1D922E7700C7AB0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6C437041D922E7700C7AB0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6C437091D922E7700C7AB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6C4370E1D922E7700C7AB0E /* GeneUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C4372A1D922F0700C7AB0E /* GUPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GUPrefixHeader.pch; sourceTree = "<group>"; };
+		D6C4372B1D922F5F00C7AB0E /* GeneUtilsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneUtilsAppDelegate.h; sourceTree = "<group>"; };
+		D6C4372C1D922F5F00C7AB0E /* GeneUtilsAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GeneUtilsAppDelegate.mm; sourceTree = "<group>"; };
+		D6C4372D1D922F5F00C7AB0E /* GUConvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUConvertViewController.h; sourceTree = "<group>"; };
+		D6C4372F1D922F5F00C7AB0E /* GULogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GULogController.h; sourceTree = "<group>"; };
+		D6C437301D922F5F00C7AB0E /* GULogController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GULogController.mm; sourceTree = "<group>"; };
+		D6C437341D922F6D00C7AB0E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D6C437351D922F6D00C7AB0E /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		D6C4374A1D939CF300C7AB0E /* GUMergeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUMergeViewController.h; sourceTree = "<group>"; };
+		D6C437701D9557B900C7AB0E /* GUSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUSplitViewController.h; sourceTree = "<group>"; };
+		D6C437731D955E7F00C7AB0E /* GUExtractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUExtractViewController.h; sourceTree = "<group>"; };
+		D6C437781D98BF1800C7AB0E /* GUTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUTabViewController.h; sourceTree = "<group>"; };
+		D6C437791D98BF1800C7AB0E /* GUTabViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUTabViewController.mm; sourceTree = "<group>"; };
+		D6C4377D1D9A162700C7AB0E /* GUFileFormatBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUFileFormatBoxController.h; sourceTree = "<group>"; };
+		D6C4377E1D9A162700C7AB0E /* GUFileFormatBoxController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUFileFormatBoxController.mm; sourceTree = "<group>"; };
+		D6C4C41A1DD4985300DA2F66 /* GUConvertViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = GUConvertViewController.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D6C4C41D1DD4986B00DA2F66 /* GUExtractViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUExtractViewController.mm; sourceTree = "<group>"; };
+		D6C4C4231DD4988E00DA2F66 /* GUMergeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUMergeViewController.mm; sourceTree = "<group>"; };
+		D6C4C4291DD498B900DA2F66 /* GUSplitViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUSplitViewController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2C3B6820C000860067E511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3B6920C000860067E511 /* libgene.a in Frameworks */,
+				CF2C3B6A20C000860067E511 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3B9A20C008C50067E511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3B9B20C008C50067E511 /* libgene.a in Frameworks */,
+				CF2C3B9C20C008C50067E511 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3BFE20C0093B0067E511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3BFF20C0093B0067E511 /* libgene.a in Frameworks */,
+				CF2C3C0020C0093B0067E511 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3C3020C009610067E511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3C3120C009610067E511 /* libgene.a in Frameworks */,
+				CF2C3C3220C009610067E511 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3C6220C009700067E511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3C6320C009700067E511 /* libgene.a in Frameworks */,
+				CF2C3C6420C009700067E511 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5A6F9A1E8D0F4D00CBDA42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5A6F9B1E8D0F4D00CBDA42 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C436F61D922E7700C7AB0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBEC63020B5BE60003A43C2 /* libgene.a in Frameworks */,
+				CF5732E51E7954B100AF8141 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C4370B1D922E7700C7AB0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF156CD41F596CAE00D74DC4 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				CF156CD51F596CE800D74DC4 /* FuzzySearchUnitTests.mm */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		CF2C3C7720C00D0E0067E511 /* operations */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3C7820C00D0E0067E511 /* converter */,
+				CF2C3C7B20C00D0E0067E511 /* extractor */,
+				CF2C3C8620C00D0E0067E511 /* merger */,
+				CF2C3C8920C00D0E0067E511 /* splitter */,
+			);
+			name = operations;
+			path = ../../operations;
+			sourceTree = "<group>";
+		};
+		CF2C3C7820C00D0E0067E511 /* converter */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3C7920C00D0E0067E511 /* Converter.cpp */,
+				CF2C3C7A20C00D0E0067E511 /* Converter.hpp */,
+			);
+			path = converter;
+			sourceTree = "<group>";
+		};
+		CF2C3C7B20C00D0E0067E511 /* extractor */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3C7C20C00D0E0067E511 /* Extractor.cpp */,
+				CF2C3C7D20C00D0E0067E511 /* Extractor.hpp */,
+				CF2C3C7E20C00D0E0067E511 /* ExtractorJob.hpp */,
+			);
+			path = extractor;
+			sourceTree = "<group>";
+		};
+		CF2C3C8620C00D0E0067E511 /* merger */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3C8720C00D0E0067E511 /* Merger.cpp */,
+				CF2C3C8820C00D0E0067E511 /* Merger.hpp */,
+			);
+			path = merger;
+			sourceTree = "<group>";
+		};
+		CF2C3C8920C00D0E0067E511 /* splitter */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3C8A20C00D0E0067E511 /* Splitter.cpp */,
+				CF2C3C8B20C00D0E0067E511 /* Splitter.hpp */,
+			);
+			path = splitter;
+			sourceTree = "<group>";
+		};
+		CF2C3C9820C00D480067E511 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3C9920C00D480067E511 /* AppDelegate.h */,
+				CF2C3C9A20C00D480067E511 /* AppDelegate.m */,
+				CF2C3C9B20C00D480067E511 /* Assets.xcassets */,
+				CF2C3CF020C00EEB0067E511 /* Main.storyboard */,
+				CF2C3C9E20C00D480067E511 /* Info.plist */,
+				CF2C3C9F20C00D480067E511 /* main.m */,
+				CF2C3CA020C00D480067E511 /* ViewController.h */,
+				CF2C3CA120C00D480067E511 /* ViewController.m */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		CF2C3CA820C00D590067E511 /* Merger */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3CA920C00D590067E511 /* AppDelegate.h */,
+				CF2C3CAA20C00D590067E511 /* AppDelegate.m */,
+				CF2C3CAB20C00D590067E511 /* Assets.xcassets */,
+				CF2C3CF420C00F160067E511 /* Main.storyboard */,
+				CF2C3CAE20C00D590067E511 /* Info.plist */,
+				CF2C3CAF20C00D590067E511 /* main.m */,
+				CF2C3CB020C00D590067E511 /* ViewController.h */,
+				CF2C3CB120C00D590067E511 /* ViewController.m */,
+			);
+			path = Merger;
+			sourceTree = "<group>";
+		};
+		CF2C3CB820C00D660067E511 /* Splitter */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3CB920C00D660067E511 /* AppDelegate.h */,
+				CF2C3CBA20C00D660067E511 /* AppDelegate.m */,
+				CF2C3CBB20C00D660067E511 /* Assets.xcassets */,
+				CF2C3CE820C00EA70067E511 /* Main.storyboard */,
+				CF2C3CBE20C00D660067E511 /* Info.plist */,
+				CF2C3CBF20C00D660067E511 /* main.m */,
+				CF2C3CC020C00D660067E511 /* ViewController.h */,
+				CF2C3CC120C00D660067E511 /* ViewController.m */,
+			);
+			path = Splitter;
+			sourceTree = "<group>";
+		};
+		CF2C3CC820C00D750067E511 /* Extractor */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3CC920C00D750067E511 /* AppDelegate.h */,
+				CF2C3CCA20C00D750067E511 /* AppDelegate.m */,
+				CF2C3CCB20C00D750067E511 /* Assets.xcassets */,
+				CF2C3CEA20C00EB60067E511 /* Main.storyboard */,
+				CF2C3CCE20C00D750067E511 /* Info.plist */,
+				CF2C3CCF20C00D750067E511 /* main.m */,
+				CF2C3CD020C00D750067E511 /* ViewController.h */,
+				CF2C3CD120C00D750067E511 /* ViewController.m */,
+			);
+			path = Extractor;
+			sourceTree = "<group>";
+		};
+		CF2C3CD820C00D8B0067E511 /* Mutator */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3CD920C00D8B0067E511 /* AppDelegate.h */,
+				CF2C3CDA20C00D8B0067E511 /* AppDelegate.m */,
+				CF2C3CDB20C00D8B0067E511 /* Assets.xcassets */,
+				CF2C3CEC20C00ECE0067E511 /* Main.storyboard */,
+				CF2C3CDE20C00D8B0067E511 /* Info.plist */,
+				CF2C3CDF20C00D8B0067E511 /* main.m */,
+				CF2C3CE020C00D8B0067E511 /* ViewController.h */,
+				CF2C3CE120C00D8B0067E511 /* ViewController.m */,
+			);
+			path = Mutator;
+			sourceTree = "<group>";
+		};
+		CFB104061E8533C500544043 /* GeneUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF156CD41F596CAE00D74DC4 /* search */,
+				CFB104071E8533C500544043 /* Convert */,
+				CFB104331E8533C500544043 /* Extract */,
+				CFB1046E1E8533C500544043 /* Info.plist */,
+			);
+			path = GeneUtilsTests;
+			sourceTree = "<group>";
+		};
+		CFB104071E8533C500544043 /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				CFB104081E8533C500544043 /* ConvertSuite.mm */,
+				CFB104091E8533C500544043 /* FastqIllumina1_3ToFastqIllumina1_8 */,
+				CFB1040C1E8533C500544043 /* FastqIllumina1_3ToFastqSanger */,
+				CFB1040F1E8533C500544043 /* FastqIllumina1_8ToFastqIllumina1_3 */,
+				CFB104121E8533C500544043 /* FastqIllumina1_8ToFastqSanger */,
+				CFB104151E8533C500544043 /* FastqSolexaToFastqIllumina1_3 */,
+				CFB104181E8533C500544043 /* FastqSolexaToFastqIllumina1_8 */,
+				CFB1041B1E8533C500544043 /* FastqToFasta */,
+				CFB1041E1E8533C500544043 /* QuotedCsvToFastq */,
+				CFB104281E8533C500544043 /* QuotedTsvToCsv */,
+				CFB1042D1E8533C500544043 /* SangerToFastqIllumina1_3 */,
+				CFB104301E8533C500544043 /* SangerToFastqIllumina1_8 */,
+			);
+			path = Convert;
+			sourceTree = "<group>";
+		};
+		CFB104091E8533C500544043 /* FastqIllumina1_3ToFastqIllumina1_8 */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1040A1E8533C500544043 /* Illumina1_3Input.fastq */,
+				CFB1040B1E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */,
+			);
+			path = FastqIllumina1_3ToFastqIllumina1_8;
+			sourceTree = "<group>";
+		};
+		CFB1040C1E8533C500544043 /* FastqIllumina1_3ToFastqSanger */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1040D1E8533C500544043 /* Illumina1_3Input.fastq */,
+				CFB1040E1E8533C500544043 /* SangerReferenceOutput.fastq */,
+			);
+			path = FastqIllumina1_3ToFastqSanger;
+			sourceTree = "<group>";
+		};
+		CFB1040F1E8533C500544043 /* FastqIllumina1_8ToFastqIllumina1_3 */ = {
+			isa = PBXGroup;
+			children = (
+				CFB104101E8533C500544043 /* Illumina1_3ReferenceOutput.fastq */,
+				CFB104111E8533C500544043 /* Illumina1_8Input.fastq */,
+			);
+			path = FastqIllumina1_8ToFastqIllumina1_3;
+			sourceTree = "<group>";
+		};
+		CFB104121E8533C500544043 /* FastqIllumina1_8ToFastqSanger */ = {
+			isa = PBXGroup;
+			children = (
+				CFB104131E8533C500544043 /* Illumina1_8Input.fastq */,
+				CFB104141E8533C500544043 /* SangerReferenceOutput.fastq */,
+			);
+			path = FastqIllumina1_8ToFastqSanger;
+			sourceTree = "<group>";
+		};
+		CFB104151E8533C500544043 /* FastqSolexaToFastqIllumina1_3 */ = {
+			isa = PBXGroup;
+			children = (
+				CFB104161E8533C500544043 /* Illumina1_3ReferenceOutput.fastq */,
+				CFB104171E8533C500544043 /* SolexaInput.fastq */,
+			);
+			path = FastqSolexaToFastqIllumina1_3;
+			sourceTree = "<group>";
+		};
+		CFB104181E8533C500544043 /* FastqSolexaToFastqIllumina1_8 */ = {
+			isa = PBXGroup;
+			children = (
+				CFB104191E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */,
+				CFB1041A1E8533C500544043 /* SolexaInput.fastq */,
+			);
+			path = FastqSolexaToFastqIllumina1_8;
+			sourceTree = "<group>";
+		};
+		CFB1041B1E8533C500544043 /* FastqToFasta */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1041C1E8533C500544043 /* IlluminaSimpleInput.fastq */,
+				CFB1041D1E8533C500544043 /* IlluminaSimpleReferenceOutput.fasta */,
+			);
+			path = FastqToFasta;
+			sourceTree = "<group>";
+		};
+		CFB1041E1E8533C500544043 /* QuotedCsvToFastq */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1041F1E8533C500544043 /* NonQuotedCsvSimpleInput.csvc */,
+				CFB104201E8533C500544043 /* NonQuotedCsvSimpleInput.ctp */,
+				CFB104211E8533C500544043 /* NonQuotedFastQSimpleReferenceOutput.fastq */,
+				CFB104221E8533C500544043 /* QuotedCsvSimpleInput.csvc */,
+				CFB104231E8533C500544043 /* QuotedCsvSimpleInput.ctp */,
+				CFB104241E8533C500544043 /* QuotedCsvWithQuotesInput.csvc */,
+				CFB104251E8533C500544043 /* QuotedCsvWithQuotesInput.ctp */,
+				CFB104261E8533C500544043 /* QuotedFastQSimpleReferenceOutput.fastq */,
+				CFB104271E8533C500544043 /* QuotedFastQWithQuotesReferenceOutput.fastq */,
+			);
+			path = QuotedCsvToFastq;
+			sourceTree = "<group>";
+		};
+		CFB104281E8533C500544043 /* QuotedTsvToCsv */ = {
+			isa = PBXGroup;
+			children = (
+				CFB104291E8533C500544043 /* QuotedTsvWithQuotesInput.ctp */,
+				CFB1042A1E8533C500544043 /* QuotedTsvWithQuotesInput.tsvc */,
+				CFB1042B1E8533C500544043 /* QuotedTsvWithQuotesOutput.csvc */,
+				CFB1042C1E8533C500544043 /* QuotedTsvWithQuotesOutput.ctp */,
+			);
+			path = QuotedTsvToCsv;
+			sourceTree = "<group>";
+		};
+		CFB1042D1E8533C500544043 /* SangerToFastqIllumina1_3 */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1042E1E8533C500544043 /* Illumina1_3ReferenceOutput.fastq */,
+				CFB1042F1E8533C500544043 /* SangerInput.fastq */,
+			);
+			path = SangerToFastqIllumina1_3;
+			sourceTree = "<group>";
+		};
+		CFB104301E8533C500544043 /* SangerToFastqIllumina1_8 */ = {
+			isa = PBXGroup;
+			children = (
+				CFB104311E8533C500544043 /* Illumina1_8ReferenceOutput.fastq */,
+				CFB104321E8533C500544043 /* SangerInput.fastq */,
+			);
+			path = SangerToFastqIllumina1_8;
+			sourceTree = "<group>";
+		};
+		CFB104331E8533C500544043 /* Extract */ = {
+			isa = PBXGroup;
+			children = (
+				CFB104341E8533C500544043 /* DemultiplexOrdinaryFastq */,
+				CFB104391E8533C500544043 /* DemultiplexSolexaFastq */,
+				CFB1043E1E8533C500544043 /* ExtractSuite.mm */,
+			);
+			path = Extract;
+			sourceTree = "<group>";
+		};
+		CFB104341E8533C500544043 /* DemultiplexOrdinaryFastq */ = {
+			isa = PBXGroup;
+			children = (
+				CFB104351E8533C500544043 /* IlluminaSimpleInput.fastq */,
+				CFB104361E8533C500544043 /* IlluminaSimpleReferenceOutput_ATTCAGAN.fastq */,
+				CFB104371E8533C500544043 /* IlluminaSimpleReferenceOutput_GAATTCGN.fastq */,
+				CFB104381E8533C500544043 /* IlluminaSimpleReferenceOutput_TCCGGAAA.fastq */,
+			);
+			path = DemultiplexOrdinaryFastq;
+			sourceTree = "<group>";
+		};
+		CFB104391E8533C500544043 /* DemultiplexSolexaFastq */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1043A1E8533C500544043 /* SolexaSimpleInput.fastq */,
+				CFB1043B1E8533C500544043 /* SolexaSimpleReferenceOutput_CATTGCTG_N35.fastq */,
+				CFB1043C1E8533C500544043 /* SolexaSimpleReferenceOutput_TCATTACT_N35.fastq */,
+				CFB1043D1E8533C500544043 /* SolexaSimpleReferenceOutput_TCATTGCT_N35.fastq */,
+			);
+			path = DemultiplexSolexaFastq;
+			sourceTree = "<group>";
+		};
+		CFBE22741F0F90C100817B71 /* obsolete */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3AED20BFFB1F0067E511 /* ColumnType.h */,
+				CF2C3AF420BFFB200067E511 /* ColumnTypesConfiguration.h */,
+				CF2C3AF320BFFB200067E511 /* ColumnTypesConfiguration.m */,
+				CF2C3B0320BFFB220067E511 /* CommandLineFlagsObj.h */,
+				CF2C3AF620BFFB210067E511 /* CommandLineFlagsObj.m */,
+				CF2C3AF920BFFB210067E511 /* CSVUtils.h */,
+				CF2C3AF820BFFB210067E511 /* CSVUtils.mm */,
+				CF2C3AEE20BFFB200067E511 /* FastaFileObj.h */,
+				CF2C3B1120BFFB240067E511 /* FastaFileObj.m */,
+				CF2C3AEB20BFFB1F0067E511 /* FastqFileObj.h */,
+				CF2C3AFA20BFFB210067E511 /* FastqFileObj.m */,
+				CF2C3AFE20BFFB210067E511 /* GeneSequenceObj.h */,
+				CF2C3AF020BFFB200067E511 /* GeneSequenceObj.m */,
+				CF2C3B0820BFFB230067E511 /* GenomicCsvFileObj.h */,
+				CF2C3AEF20BFFB200067E511 /* GenomicCsvFileObj.m */,
+				CF2C3B1220BFFB240067E511 /* GenomicSeparatedFileObj.h */,
+				CF2C3B0520BFFB220067E511 /* GenomicSeparatedFileObj.m */,
+				CF2C3AEC20BFFB1F0067E511 /* GenomicTsvFileObj.h */,
+				CF2C3B0220BFFB220067E511 /* GenomicTsvFileObj.m */,
+				CF2C3B0020BFFB220067E511 /* InOutFile.h */,
+				CF2C3B0420BFFB220067E511 /* InOutFile.m */,
+				CF2C3B0E20BFFB240067E511 /* Lexer.h */,
+				CF2C3B1020BFFB240067E511 /* Lexer.m */,
+				CF2C3AFF20BFFB220067E511 /* main.mm */,
+				CF2C3AF120BFFB200067E511 /* Mutator.h */,
+				CF2C3B0620BFFB220067E511 /* Mutator.m */,
+				CF2C3B0720BFFB220067E511 /* OperationObj.h */,
+				CF2C3B0920BFFB230067E511 /* OperationObj.m */,
+				CF2C3B0A20BFFB230067E511 /* SeparatedFileObj.h */,
+				CF2C3B0F20BFFB240067E511 /* SeparatedFileObj.m */,
+				CF2C3AFD20BFFB210067E511 /* SequenceFileObj.h */,
+				CF2C3AF220BFFB200067E511 /* SequenceFileObj.m */,
+				CF2C3AFC20BFFB210067E511 /* StringInputStreamObj.h */,
+				CF2C3B0C20BFFB230067E511 /* StringInputStreamObj.mm */,
+				CF2C3B0D20BFFB230067E511 /* StringOutputStreamObj.h */,
+				CF2C3AF720BFFB210067E511 /* StringOutputStreamObj.mm */,
+				CF2C3AFB20BFFB210067E511 /* Utils.h */,
+				CF2C3AF520BFFB200067E511 /* Utils.m */,
+				CF2C3B3B20BFFE5F0067E511 /* GUUtils.h */,
+				CF2C3B3C20BFFE600067E511 /* GUUtils.m */,
+			);
+			path = obsolete;
+			sourceTree = "<group>";
+		};
+		D62213291DCA1FDB00D237BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFBEC62F20B5BE60003A43C2 /* libgene.a */,
+				CF1EFCFF1DF166AB00AE0CFB /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6C364701D9A51BE00B4D875 /* File Format Box */ = {
+			isa = PBXGroup;
+			children = (
+				D6C3646F1D9A519500B4D875 /* GUFileFormatBoxProtocol.h */,
+				D6C4377D1D9A162700C7AB0E /* GUFileFormatBoxController.h */,
+				D6C4377E1D9A162700C7AB0E /* GUFileFormatBoxController.mm */,
+				CF714C011E3A139600A7B58F /* GUFileFormatBox.xib */,
+			);
+			name = "File Format Box";
+			sourceTree = "<group>";
+		};
+		D6C364711D9A571E00B4D875 /* Operation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6C4372D1D922F5F00C7AB0E /* GUConvertViewController.h */,
+				D6C4C41A1DD4985300DA2F66 /* GUConvertViewController.mm */,
+				D6C4374A1D939CF300C7AB0E /* GUMergeViewController.h */,
+				D6C4C4231DD4988E00DA2F66 /* GUMergeViewController.mm */,
+				D6C437701D9557B900C7AB0E /* GUSplitViewController.h */,
+				D6C4C4291DD498B900DA2F66 /* GUSplitViewController.mm */,
+				D6C437731D955E7F00C7AB0E /* GUExtractViewController.h */,
+				D6C4C41D1DD4986B00DA2F66 /* GUExtractViewController.mm */,
+				D68368A71D9BEC5300D43E05 /* GUMutateViewController.h */,
+				D68368A81D9BEC5300D43E05 /* GUMutateViewController.mm */,
+			);
+			name = "Operation Controllers";
+			sourceTree = "<group>";
+		};
+		D6C436FA1D922E7700C7AB0E /* GeneUtils */ = {
+			isa = PBXGroup;
+			children = (
+				CFBE22741F0F90C100817B71 /* obsolete */,
+				D6C437341D922F6D00C7AB0E /* ViewController.h */,
+				D6C437351D922F6D00C7AB0E /* ViewController.mm */,
+				D68368A41D9BA66400D43E05 /* GUApplication.h */,
+				D68368A51D9BA66400D43E05 /* GUApplication.mm */,
+				D68368AA1D9CBA7000D43E05 /* GUProgressWindowController.h */,
+				D68368AB1D9CBA7000D43E05 /* GUProgressWindowController.mm */,
+				D68368AC1D9CBA7000D43E05 /* GUProgressWindowController.xib */,
+				D6C4372B1D922F5F00C7AB0E /* GeneUtilsAppDelegate.h */,
+				D6C4372C1D922F5F00C7AB0E /* GeneUtilsAppDelegate.mm */,
+				D6C4372F1D922F5F00C7AB0E /* GULogController.h */,
+				D6C437301D922F5F00C7AB0E /* GULogController.mm */,
+				D6C437781D98BF1800C7AB0E /* GUTabViewController.h */,
+				D6C437791D98BF1800C7AB0E /* GUTabViewController.mm */,
+				D6C364701D9A51BE00B4D875 /* File Format Box */,
+				D6C364711D9A571E00B4D875 /* Operation Controllers */,
+				D6C437041D922E7700C7AB0E /* Assets.xcassets */,
+				CF2C3CF220C00EFC0067E511 /* Main.storyboard */,
+				D6C437091D922E7700C7AB0E /* Info.plist */,
+				D6C436FF1D922E7700C7AB0E /* main.m */,
+				D6C4372A1D922F0700C7AB0E /* GUPrefixHeader.pch */,
+			);
+			path = GeneUtils;
+			sourceTree = "<group>";
+		};
+		DF25FE0F1BFF37460055CEE7 = {
+			isa = PBXGroup;
+			children = (
+				CF2C3C7720C00D0E0067E511 /* operations */,
+				D6C436FA1D922E7700C7AB0E /* GeneUtils */,
+				CFB104061E8533C500544043 /* GeneUtilsTests */,
+				CF2C3C9820C00D480067E511 /* Converter */,
+				CF2C3CA820C00D590067E511 /* Merger */,
+				CF2C3CB820C00D660067E511 /* Splitter */,
+				CF2C3CC820C00D750067E511 /* Extractor */,
+				CF2C3CD820C00D8B0067E511 /* Mutator */,
+				DF25FE191BFF37460055CEE7 /* Products */,
+				D62213291DCA1FDB00D237BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF25FE191BFF37460055CEE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6C436F91D922E7700C7AB0E /* GeneUtils.app */,
+				D6C4370E1D922E7700C7AB0E /* GeneUtilsTests.xctest */,
+				CF5A6FA01E8D0F4D00CBDA42 /* geneutils copy */,
+				CF2C3B7420C000860067E511 /* Converter.app */,
+				CF2C3BA620C008C50067E511 /* Splitter.app */,
+				CF2C3C0A20C0093B0067E511 /* Merger.app */,
+				CF2C3C3C20C009610067E511 /* Extractor.app */,
+				CF2C3C6E20C009700067E511 /* Mutator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2C3B3F20C000860067E511 /* Converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2C3B7120C000860067E511 /* Build configuration list for PBXNativeTarget "Converter" */;
+			buildPhases = (
+				CF2C3B4020C000860067E511 /* Sources */,
+				CF2C3B6820C000860067E511 /* Frameworks */,
+				CF2C3B6B20C000860067E511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Converter;
+			productName = Converter;
+			productReference = CF2C3B7420C000860067E511 /* Converter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF2C3B7620C008C50067E511 /* Splitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2C3BA320C008C50067E511 /* Build configuration list for PBXNativeTarget "Splitter" */;
+			buildPhases = (
+				CF2C3B7720C008C50067E511 /* Sources */,
+				CF2C3B9A20C008C50067E511 /* Frameworks */,
+				CF2C3B9D20C008C50067E511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Splitter;
+			productName = Splitter;
+			productReference = CF2C3BA620C008C50067E511 /* Splitter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF2C3BDA20C0093B0067E511 /* Merger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2C3C0720C0093B0067E511 /* Build configuration list for PBXNativeTarget "Merger" */;
+			buildPhases = (
+				CF2C3BDB20C0093B0067E511 /* Sources */,
+				CF2C3BFE20C0093B0067E511 /* Frameworks */,
+				CF2C3C0120C0093B0067E511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Merger;
+			productName = Merger;
+			productReference = CF2C3C0A20C0093B0067E511 /* Merger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF2C3C0C20C009610067E511 /* Extractor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2C3C3920C009610067E511 /* Build configuration list for PBXNativeTarget "Extractor" */;
+			buildPhases = (
+				CF2C3C0D20C009610067E511 /* Sources */,
+				CF2C3C3020C009610067E511 /* Frameworks */,
+				CF2C3C3320C009610067E511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extractor;
+			productName = Extractor;
+			productReference = CF2C3C3C20C009610067E511 /* Extractor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF2C3C3E20C009700067E511 /* Mutator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2C3C6B20C009700067E511 /* Build configuration list for PBXNativeTarget "Mutator" */;
+			buildPhases = (
+				CF2C3C3F20C009700067E511 /* Sources */,
+				CF2C3C6220C009700067E511 /* Frameworks */,
+				CF2C3C6520C009700067E511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mutator;
+			productName = Mutator;
+			productReference = CF2C3C6E20C009700067E511 /* Mutator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF5A6F561E8D0F4D00CBDA42 /* geneutils copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF5A6F9D1E8D0F4D00CBDA42 /* Build configuration list for PBXNativeTarget "geneutils copy" */;
+			buildPhases = (
+				CF5A6F571E8D0F4D00CBDA42 /* Sources */,
+				CF5A6F9A1E8D0F4D00CBDA42 /* Frameworks */,
+				CF5A6F9C1E8D0F4D00CBDA42 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "geneutils copy";
+			productName = geneutils;
+			productReference = CF5A6FA01E8D0F4D00CBDA42 /* geneutils copy */;
+			productType = "com.apple.product-type.tool";
+		};
+		D6C436F81D922E7700C7AB0E /* GeneUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6C437261D922E7700C7AB0E /* Build configuration list for PBXNativeTarget "GeneUtils" */;
+			buildPhases = (
+				D6C436F51D922E7700C7AB0E /* Sources */,
+				D6C436F61D922E7700C7AB0E /* Frameworks */,
+				D6C436F71D922E7700C7AB0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeneUtils;
+			productName = GeneUtils;
+			productReference = D6C436F91D922E7700C7AB0E /* GeneUtils.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6C4370D1D922E7700C7AB0E /* GeneUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6C437271D922E7700C7AB0E /* Build configuration list for PBXNativeTarget "GeneUtilsTests" */;
+			buildPhases = (
+				D6C4370A1D922E7700C7AB0E /* Sources */,
+				D6C4370B1D922E7700C7AB0E /* Frameworks */,
+				D6C4370C1D922E7700C7AB0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6C437101D922E7700C7AB0E /* PBXTargetDependency */,
+			);
+			name = GeneUtilsTests;
+			productName = GeneUtilsTests;
+			productReference = D6C4370E1D922E7700C7AB0E /* GeneUtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF25FE101BFF37460055CEE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Frangou Lab";
+				TargetAttributes = {
+					CF5A6F561E8D0F4D00CBDA42 = {
+						DevelopmentTeam = NHY33MD999;
+					};
+					D6C436F81D922E7700C7AB0E = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NHY33MD999;
+						ProvisioningStyle = Automatic;
+					};
+					D6C4370D1D922E7700C7AB0E = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NHY33MD999;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D6C436F81D922E7700C7AB0E;
+					};
+				};
+			};
+			buildConfigurationList = DF25FE131BFF37460055CEE7 /* Build configuration list for PBXProject "geneutils" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF25FE0F1BFF37460055CEE7;
+			productRefGroup = DF25FE191BFF37460055CEE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6C436F81D922E7700C7AB0E /* GeneUtils */,
+				CF2C3B3F20C000860067E511 /* Converter */,
+				CF2C3BDA20C0093B0067E511 /* Merger */,
+				CF2C3B7620C008C50067E511 /* Splitter */,
+				CF2C3C0C20C009610067E511 /* Extractor */,
+				CF2C3C3E20C009700067E511 /* Mutator */,
+				D6C4370D1D922E7700C7AB0E /* GeneUtilsTests */,
+				CF5A6F561E8D0F4D00CBDA42 /* geneutils copy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF2C3B6B20C000860067E511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3B6C20C000860067E511 /* Assets.xcassets in Resources */,
+				CF2C3B6E20C000860067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */,
+				CF2C3B6F20C000860067E511 /* GUFileFormatBox.xib in Resources */,
+				CF2C3CF120C00EEB0067E511 /* Main.storyboard in Resources */,
+				CF2C3B7020C000860067E511 /* GUProgressWindowController.xib in Resources */,
+				CF2C3CA320C00D480067E511 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3B9D20C008C50067E511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3B9E20C008C50067E511 /* Assets.xcassets in Resources */,
+				CF2C3BA020C008C50067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */,
+				CF2C3BA120C008C50067E511 /* GUFileFormatBox.xib in Resources */,
+				CF2C3CE920C00EA70067E511 /* Main.storyboard in Resources */,
+				CF2C3BA220C008C50067E511 /* GUProgressWindowController.xib in Resources */,
+				CF2C3CC320C00D660067E511 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3C0120C0093B0067E511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3C0220C0093B0067E511 /* Assets.xcassets in Resources */,
+				CF2C3C0420C0093B0067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */,
+				CF2C3C0520C0093B0067E511 /* GUFileFormatBox.xib in Resources */,
+				CF2C3CF520C00F160067E511 /* Main.storyboard in Resources */,
+				CF2C3C0620C0093B0067E511 /* GUProgressWindowController.xib in Resources */,
+				CF2C3CB320C00D590067E511 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3C3320C009610067E511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3C3420C009610067E511 /* Assets.xcassets in Resources */,
+				CF2C3C3620C009610067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */,
+				CF2C3C3720C009610067E511 /* GUFileFormatBox.xib in Resources */,
+				CF2C3CEB20C00EB60067E511 /* Main.storyboard in Resources */,
+				CF2C3C3820C009610067E511 /* GUProgressWindowController.xib in Resources */,
+				CF2C3CD320C00D750067E511 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3C6520C009700067E511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3C6620C009700067E511 /* Assets.xcassets in Resources */,
+				CF2C3C6820C009700067E511 /* Illumina1_8ReferenceOutput.fastq in Resources */,
+				CF2C3C6920C009700067E511 /* GUFileFormatBox.xib in Resources */,
+				CF2C3CED20C00ECE0067E511 /* Main.storyboard in Resources */,
+				CF2C3C6A20C009700067E511 /* GUProgressWindowController.xib in Resources */,
+				CF2C3CE320C00D8B0067E511 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C436F71D922E7700C7AB0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C437051D922E7700C7AB0E /* Assets.xcassets in Resources */,
+				CFB104721E8533C500544043 /* Illumina1_8ReferenceOutput.fastq in Resources */,
+				CF2C3CF320C00EFD0067E511 /* Main.storyboard in Resources */,
+				CF714C021E3A139600A7B58F /* GUFileFormatBox.xib in Resources */,
+				D68368AE1D9CBA7000D43E05 /* GUProgressWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C4370C1D922E7700C7AB0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2C3B4020C000860067E511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3B4120C000860067E511 /* Mutator.m in Sources */,
+				CF2C3B4220C000860067E511 /* SeparatedFileObj.m in Sources */,
+				CF2C3CF620C012E80067E511 /* Converter.cpp in Sources */,
+				CF2C3B4420C000860067E511 /* InOutFile.m in Sources */,
+				CF2C3B4520C000860067E511 /* StringInputStreamObj.mm in Sources */,
+				CF2C3B4620C000860067E511 /* GeneSequenceObj.m in Sources */,
+				CF2C3B4920C000860067E511 /* GUUtils.m in Sources */,
+				CF2C3B4A20C000860067E511 /* GenomicCsvFileObj.m in Sources */,
+				CF2C3B4C20C000860067E511 /* GUTabViewController.mm in Sources */,
+				CF2C3CA620C00D480067E511 /* main.m in Sources */,
+				CF2C3B4E20C000860067E511 /* CSVUtils.mm in Sources */,
+				CF2C3B4F20C000860067E511 /* GUProgressWindowController.mm in Sources */,
+				CF2C3B5020C000860067E511 /* GenomicTsvFileObj.m in Sources */,
+				CF2C3B5320C000860067E511 /* GenomicSeparatedFileObj.m in Sources */,
+				CF2C3B5520C000860067E511 /* GULogController.mm in Sources */,
+				CF2C3B5720C000860067E511 /* ColumnTypesConfiguration.m in Sources */,
+				CF2C3CA220C00D480067E511 /* AppDelegate.m in Sources */,
+				CF2C3B5920C000860067E511 /* StringOutputStreamObj.mm in Sources */,
+				CF2C3B5A20C000860067E511 /* Utils.m in Sources */,
+				CF2C3B5C20C000860067E511 /* OperationObj.m in Sources */,
+				CF2C3B5F20C000860067E511 /* CommandLineFlagsObj.m in Sources */,
+				CF2C3CA720C00D480067E511 /* ViewController.m in Sources */,
+				CF2C3B6020C000860067E511 /* GUFileFormatBoxController.mm in Sources */,
+				CF2C3B6120C000860067E511 /* GUConvertViewController.mm in Sources */,
+				CF2C3B6220C000860067E511 /* SequenceFileObj.m in Sources */,
+				CF2C3B6320C000860067E511 /* Lexer.m in Sources */,
+				CF2C3B6420C000860067E511 /* FastaFileObj.m in Sources */,
+				CF2C3B6720C000860067E511 /* FastqFileObj.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3B7720C008C50067E511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3B7820C008C50067E511 /* Mutator.m in Sources */,
+				CF2C3B7920C008C50067E511 /* SeparatedFileObj.m in Sources */,
+				CF2C3B7A20C008C50067E511 /* InOutFile.m in Sources */,
+				CF2C3B7B20C008C50067E511 /* StringInputStreamObj.mm in Sources */,
+				CF2C3B7C20C008C50067E511 /* GeneSequenceObj.m in Sources */,
+				CF2C3B7E20C008C50067E511 /* GUUtils.m in Sources */,
+				CF2C3B7F20C008C50067E511 /* GenomicCsvFileObj.m in Sources */,
+				CF2C3B8120C008C50067E511 /* GUTabViewController.mm in Sources */,
+				CF2C3CC620C00D660067E511 /* main.m in Sources */,
+				CF2C3B8320C008C50067E511 /* CSVUtils.mm in Sources */,
+				CF2C3B8420C008C50067E511 /* GUProgressWindowController.mm in Sources */,
+				CF2C3B8520C008C50067E511 /* GenomicTsvFileObj.m in Sources */,
+				CF2C3B8720C008C50067E511 /* GenomicSeparatedFileObj.m in Sources */,
+				CF2C3B8920C008C50067E511 /* GULogController.mm in Sources */,
+				CF2C3B8A20C008C50067E511 /* ColumnTypesConfiguration.m in Sources */,
+				CF2C3CC220C00D660067E511 /* AppDelegate.m in Sources */,
+				CF2C3CFB20C012FE0067E511 /* Splitter.cpp in Sources */,
+				CF2C3B8C20C008C50067E511 /* StringOutputStreamObj.mm in Sources */,
+				CF2C3B8D20C008C50067E511 /* Utils.m in Sources */,
+				CF2C3B8F20C008C50067E511 /* OperationObj.m in Sources */,
+				CF2C3B9120C008C50067E511 /* CommandLineFlagsObj.m in Sources */,
+				CF2C3CC720C00D660067E511 /* ViewController.m in Sources */,
+				CF2C3B9220C008C50067E511 /* GUFileFormatBoxController.mm in Sources */,
+				CF2C3B9420C008C50067E511 /* SequenceFileObj.m in Sources */,
+				CF2C3B9520C008C50067E511 /* Lexer.m in Sources */,
+				CF2C3B9620C008C50067E511 /* FastaFileObj.m in Sources */,
+				CF2C3C7120C0099C0067E511 /* GUSplitViewController.mm in Sources */,
+				CF2C3B9920C008C50067E511 /* FastqFileObj.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3BDB20C0093B0067E511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3BDC20C0093B0067E511 /* Mutator.m in Sources */,
+				CF2C3BDD20C0093B0067E511 /* SeparatedFileObj.m in Sources */,
+				CF2C3BDE20C0093B0067E511 /* InOutFile.m in Sources */,
+				CF2C3BDF20C0093B0067E511 /* StringInputStreamObj.mm in Sources */,
+				CF2C3BE020C0093B0067E511 /* GeneSequenceObj.m in Sources */,
+				CF2C3BE220C0093B0067E511 /* GUUtils.m in Sources */,
+				CF2C3BE320C0093B0067E511 /* GenomicCsvFileObj.m in Sources */,
+				CF2C3BE520C0093B0067E511 /* GUTabViewController.mm in Sources */,
+				CF2C3CB620C00D590067E511 /* main.m in Sources */,
+				CF2C3CFA20C012FA0067E511 /* Merger.cpp in Sources */,
+				CF2C3BE720C0093B0067E511 /* CSVUtils.mm in Sources */,
+				CF2C3BE820C0093B0067E511 /* GUProgressWindowController.mm in Sources */,
+				CF2C3BE920C0093B0067E511 /* GenomicTsvFileObj.m in Sources */,
+				CF2C3BEB20C0093B0067E511 /* GenomicSeparatedFileObj.m in Sources */,
+				CF2C3BED20C0093B0067E511 /* GULogController.mm in Sources */,
+				CF2C3BEE20C0093B0067E511 /* ColumnTypesConfiguration.m in Sources */,
+				CF2C3CB220C00D590067E511 /* AppDelegate.m in Sources */,
+				CF2C3BF020C0093B0067E511 /* StringOutputStreamObj.mm in Sources */,
+				CF2C3C7020C009970067E511 /* GUMergeViewController.mm in Sources */,
+				CF2C3BF120C0093B0067E511 /* Utils.m in Sources */,
+				CF2C3BF320C0093B0067E511 /* OperationObj.m in Sources */,
+				CF2C3CB720C00D590067E511 /* ViewController.m in Sources */,
+				CF2C3BF520C0093B0067E511 /* CommandLineFlagsObj.m in Sources */,
+				CF2C3BF620C0093B0067E511 /* GUFileFormatBoxController.mm in Sources */,
+				CF2C3BF820C0093B0067E511 /* SequenceFileObj.m in Sources */,
+				CF2C3BF920C0093B0067E511 /* Lexer.m in Sources */,
+				CF2C3BFA20C0093B0067E511 /* FastaFileObj.m in Sources */,
+				CF2C3BFD20C0093B0067E511 /* FastqFileObj.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3C0D20C009610067E511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3C0E20C009610067E511 /* Mutator.m in Sources */,
+				CF2C3C0F20C009610067E511 /* SeparatedFileObj.m in Sources */,
+				CF2C3C1020C009610067E511 /* InOutFile.m in Sources */,
+				CF2C3C1120C009610067E511 /* StringInputStreamObj.mm in Sources */,
+				CF2C3C1220C009610067E511 /* GeneSequenceObj.m in Sources */,
+				CF2C3C1420C009610067E511 /* GUUtils.m in Sources */,
+				CF2C3C1520C009610067E511 /* GenomicCsvFileObj.m in Sources */,
+				CF2C3C1720C009610067E511 /* GUTabViewController.mm in Sources */,
+				CF2C3CD620C00D750067E511 /* main.m in Sources */,
+				CF2C3C1920C009610067E511 /* CSVUtils.mm in Sources */,
+				CF2C3C1A20C009610067E511 /* GUProgressWindowController.mm in Sources */,
+				CF2C3C1B20C009610067E511 /* GenomicTsvFileObj.m in Sources */,
+				CF2C3C1D20C009610067E511 /* GenomicSeparatedFileObj.m in Sources */,
+				CF2C3C1F20C009610067E511 /* GULogController.mm in Sources */,
+				CF2C3C2020C009610067E511 /* ColumnTypesConfiguration.m in Sources */,
+				CF2C3CD220C00D750067E511 /* AppDelegate.m in Sources */,
+				CF2C3C2220C009610067E511 /* StringOutputStreamObj.mm in Sources */,
+				CF2C3C2320C009610067E511 /* Utils.m in Sources */,
+				CF2C3C2520C009610067E511 /* OperationObj.m in Sources */,
+				CF2C3C2720C009610067E511 /* CommandLineFlagsObj.m in Sources */,
+				CF2C3CD720C00D750067E511 /* ViewController.m in Sources */,
+				CF2C3C2820C009610067E511 /* GUFileFormatBoxController.mm in Sources */,
+				CF2C3C2A20C009610067E511 /* SequenceFileObj.m in Sources */,
+				CF2C3C2B20C009610067E511 /* Lexer.m in Sources */,
+				CF2C3C2C20C009610067E511 /* FastaFileObj.m in Sources */,
+				CF2C3C7220C0099F0067E511 /* GUExtractViewController.mm in Sources */,
+				CF2C3CF720C012EC0067E511 /* Extractor.cpp in Sources */,
+				CF2C3C2F20C009610067E511 /* FastqFileObj.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C3C3F20C009700067E511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3C4020C009700067E511 /* Mutator.m in Sources */,
+				CF2C3C4120C009700067E511 /* SeparatedFileObj.m in Sources */,
+				CF2C3C4220C009700067E511 /* InOutFile.m in Sources */,
+				CF2C3C4320C009700067E511 /* StringInputStreamObj.mm in Sources */,
+				CF2C3C4420C009700067E511 /* GeneSequenceObj.m in Sources */,
+				CF2C3C4620C009700067E511 /* GUUtils.m in Sources */,
+				CF2C3C4720C009700067E511 /* GenomicCsvFileObj.m in Sources */,
+				CF2C3C4920C009700067E511 /* GUTabViewController.mm in Sources */,
+				CF2C3CE620C00D8B0067E511 /* main.m in Sources */,
+				CF2C3C4B20C009700067E511 /* CSVUtils.mm in Sources */,
+				CF2C3C4C20C009700067E511 /* GUProgressWindowController.mm in Sources */,
+				CF2C3C4D20C009700067E511 /* GenomicTsvFileObj.m in Sources */,
+				CF2C3C4F20C009700067E511 /* GenomicSeparatedFileObj.m in Sources */,
+				CF2C3C5120C009700067E511 /* GULogController.mm in Sources */,
+				CF2C3C5220C009700067E511 /* ColumnTypesConfiguration.m in Sources */,
+				CF2C3CE220C00D8B0067E511 /* AppDelegate.m in Sources */,
+				CF2C3C7420C009A40067E511 /* GUMutateViewController.mm in Sources */,
+				CF2C3C5420C009700067E511 /* StringOutputStreamObj.mm in Sources */,
+				CF2C3C5520C009700067E511 /* Utils.m in Sources */,
+				CF2C3C5720C009700067E511 /* OperationObj.m in Sources */,
+				CF2C3CE720C00D8B0067E511 /* ViewController.m in Sources */,
+				CF2C3C5920C009700067E511 /* CommandLineFlagsObj.m in Sources */,
+				CF2C3C5A20C009700067E511 /* GUFileFormatBoxController.mm in Sources */,
+				CF2C3C5C20C009700067E511 /* SequenceFileObj.m in Sources */,
+				CF2C3C5D20C009700067E511 /* Lexer.m in Sources */,
+				CF2C3C5E20C009700067E511 /* FastaFileObj.m in Sources */,
+				CF2C3C6120C009700067E511 /* FastqFileObj.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5A6F571E8D0F4D00CBDA42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3C8F20C00D0E0067E511 /* Extractor.cpp in Sources */,
+				CF2C3C9720C00D0E0067E511 /* Splitter.cpp in Sources */,
+				CF2C3C8D20C00D0E0067E511 /* Converter.cpp in Sources */,
+				CF2C3C9520C00D0E0067E511 /* Merger.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C436F51D922E7700C7AB0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2C3B2D20BFFB240067E511 /* Mutator.m in Sources */,
+				CF2C3B3520BFFB240067E511 /* SeparatedFileObj.m in Sources */,
+				D6C4C46D1DD576A000DA2F66 /* GUExtractViewController.mm in Sources */,
+				CF2C3B2920BFFB240067E511 /* InOutFile.m in Sources */,
+				CF2C3B3320BFFB240067E511 /* StringInputStreamObj.mm in Sources */,
+				CF2C3B1520BFFB240067E511 /* GeneSequenceObj.m in Sources */,
+				D6C4C46E1DD576AC00DA2F66 /* GUMutateViewController.mm in Sources */,
+				CF2C3B3D20BFFE600067E511 /* GUUtils.m in Sources */,
+				CF2C3B1320BFFB240067E511 /* GenomicCsvFileObj.m in Sources */,
+				D6C437001D922E7700C7AB0E /* main.m in Sources */,
+				D6C4377B1D98BF1800C7AB0E /* GUTabViewController.mm in Sources */,
+				D68368A61D9BA66400D43E05 /* GUApplication.mm in Sources */,
+				CF2C3B2120BFFB240067E511 /* CSVUtils.mm in Sources */,
+				D68368AD1D9CBA7000D43E05 /* GUProgressWindowController.mm in Sources */,
+				CF2C3B2720BFFB240067E511 /* GenomicTsvFileObj.m in Sources */,
+				CF2C3B2B20BFFB240067E511 /* GenomicSeparatedFileObj.m in Sources */,
+				D6C437311D922F5F00C7AB0E /* GeneUtilsAppDelegate.mm in Sources */,
+				D6C437331D922F5F00C7AB0E /* GULogController.mm in Sources */,
+				D6C4C46F1DD576B500DA2F66 /* GUSplitViewController.mm in Sources */,
+				CF2C3C8C20C00D0E0067E511 /* Converter.cpp in Sources */,
+				CF2C3B1920BFFB240067E511 /* ColumnTypesConfiguration.m in Sources */,
+				CF2C3B1F20BFFB240067E511 /* StringOutputStreamObj.mm in Sources */,
+				CF2C3B1B20BFFB240067E511 /* Utils.m in Sources */,
+				CF2C3C8E20C00D0E0067E511 /* Extractor.cpp in Sources */,
+				CF2C3B2F20BFFB240067E511 /* OperationObj.m in Sources */,
+				D6C4C4701DD576B800DA2F66 /* GUMergeViewController.mm in Sources */,
+				D6C437361D922F6D00C7AB0E /* ViewController.mm in Sources */,
+				CF2C3B1D20BFFB240067E511 /* CommandLineFlagsObj.m in Sources */,
+				D6C4377F1D9A162700C7AB0E /* GUFileFormatBoxController.mm in Sources */,
+				D6774DC61DDC9489002843AA /* GUConvertViewController.mm in Sources */,
+				CF2C3B1720BFFB240067E511 /* SequenceFileObj.m in Sources */,
+				CF2C3B3720BFFB240067E511 /* Lexer.m in Sources */,
+				CF2C3B3920BFFB240067E511 /* FastaFileObj.m in Sources */,
+				CF2C3C9620C00D0E0067E511 /* Splitter.cpp in Sources */,
+				CF2C3C9420C00D0E0067E511 /* Merger.cpp in Sources */,
+				CF2C3B2320BFFB240067E511 /* FastqFileObj.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C4370A1D922E7700C7AB0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB104C11E8533D800544043 /* ConvertSuite.mm in Sources */,
+				CF156CD61F596CE800D74DC4 /* FuzzySearchUnitTests.mm in Sources */,
+				CFB104C31E85349000544043 /* ExtractSuite.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6C437101D922E7700C7AB0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6C436F81D922E7700C7AB0E /* GeneUtils */;
+			targetProxy = D6C4370F1D922E7700C7AB0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF2C3B7220C000860067E511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Converter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Converter";
+				PRODUCT_MODULE_NAME = Converter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		CF2C3B7320C000860067E511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Converter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Converter";
+				PRODUCT_MODULE_NAME = Converter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		CF2C3BA420C008C50067E511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Splitter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Splitter";
+				PRODUCT_MODULE_NAME = Splitter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		CF2C3BA520C008C50067E511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Splitter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Splitter";
+				PRODUCT_MODULE_NAME = Splitter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		CF2C3C0820C0093B0067E511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Merger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Merger";
+				PRODUCT_MODULE_NAME = Merger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		CF2C3C0920C0093B0067E511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Merger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Merger";
+				PRODUCT_MODULE_NAME = Merger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		CF2C3C3A20C009610067E511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Extractor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Extractor";
+				PRODUCT_MODULE_NAME = Extractor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		CF2C3C3B20C009610067E511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Extractor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Extractor";
+				PRODUCT_MODULE_NAME = Extractor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		CF2C3C6C20C009700067E511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Mutator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Mutator";
+				PRODUCT_MODULE_NAME = Mutator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		CF2C3C6D20C009700067E511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = Mutator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.Mutator";
+				PRODUCT_MODULE_NAME = Mutator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		CF5A6F9E1E8D0F4D00CBDA42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../TBB",
+					$SRCROOT/../../libgene/include/,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../TBB/tbb/lib/dynamic",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_MODULE_NAME = geneutils2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF5A6F9F1E8D0F4D00CBDA42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../TBB",
+					$SRCROOT/../../libgene/include/,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../TBB/tbb/lib/dynamic",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_MODULE_NAME = geneutils2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D6C437201D922E7700C7AB0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = GeneUtils/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.GeneUtils";
+				PRODUCT_MODULE_NAME = GeneUtils;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		D6C437211D922E7700C7AB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = GeneUtils/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Frangou-Lab.GeneUtils";
+				PRODUCT_MODULE_NAME = GeneUtils;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		D6C437221D922E7700C7AB0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = GeneUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axmor.GeneUtilsTests;
+				PRODUCT_MODULE_NAME = GeneUtils;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeneUtils.app/Contents/MacOS/GeneUtils";
+			};
+			name = Debug;
+		};
+		D6C437231D922E7700C7AB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_X86_VECTOR_INSTRUCTIONS = avx;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NHY33MD999;
+				HEADER_SEARCH_PATHS = $SRCROOT/../../libgene/include/;
+				INFOPLIST_FILE = GeneUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axmor.GeneUtilsTests;
+				PRODUCT_MODULE_NAME = GeneUtils;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeneUtils.app/Contents/MacOS/GeneUtils";
+			};
+			name = Release;
+		};
+		DF25FE1D1BFF37460055CEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GeneUtils/GUPrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PRODUCT_MODULE_NAME = GeneUtils;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DF25FE1E1BFF37460055CEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GeneUtils/GUPrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				PRODUCT_MODULE_NAME = GeneUtils;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2C3B7120C000860067E511 /* Build configuration list for PBXNativeTarget "Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2C3B7220C000860067E511 /* Debug */,
+				CF2C3B7320C000860067E511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2C3BA320C008C50067E511 /* Build configuration list for PBXNativeTarget "Splitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2C3BA420C008C50067E511 /* Debug */,
+				CF2C3BA520C008C50067E511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2C3C0720C0093B0067E511 /* Build configuration list for PBXNativeTarget "Merger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2C3C0820C0093B0067E511 /* Debug */,
+				CF2C3C0920C0093B0067E511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2C3C3920C009610067E511 /* Build configuration list for PBXNativeTarget "Extractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2C3C3A20C009610067E511 /* Debug */,
+				CF2C3C3B20C009610067E511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2C3C6B20C009700067E511 /* Build configuration list for PBXNativeTarget "Mutator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2C3C6C20C009700067E511 /* Debug */,
+				CF2C3C6D20C009700067E511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF5A6F9D1E8D0F4D00CBDA42 /* Build configuration list for PBXNativeTarget "geneutils copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5A6F9E1E8D0F4D00CBDA42 /* Debug */,
+				CF5A6F9F1E8D0F4D00CBDA42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6C437261D922E7700C7AB0E /* Build configuration list for PBXNativeTarget "GeneUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C437201D922E7700C7AB0E /* Debug */,
+				D6C437211D922E7700C7AB0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6C437271D922E7700C7AB0E /* Build configuration list for PBXNativeTarget "GeneUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C437221D922E7700C7AB0E /* Debug */,
+				D6C437231D922E7700C7AB0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF25FE131BFF37460055CEE7 /* Build configuration list for PBXProject "geneutils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF25FE1D1BFF37460055CEE7 /* Debug */,
+				DF25FE1E1BFF37460055CEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF25FE101BFF37460055CEE7 /* Project object */;
+}
